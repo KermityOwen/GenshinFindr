@@ -1,0 +1,5 @@
+# Dotenv Environment Variable Files
+.env
+
+# Dependency Directories
+node_modules/
