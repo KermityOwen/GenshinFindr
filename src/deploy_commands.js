@@ -4,8 +4,18 @@ const { Routes } = require('discord-api-types/v9');
 require('dotenv').config({ path: "../.env" })
 
 const commands = [
-	new SlashCommandBuilder().setName('ping').setDescription('Pongs with information on lag.'),
-	new SlashCommandBuilder().setName('test').setDescription('Test function to do something. Literally could be anything. DEVELOPER ONLY.'),
+	new SlashCommandBuilder()
+	.setName('ping')
+	.setDescription('Pongs with information on lag.'),
+
+	new SlashCommandBuilder()
+	.setName('test')
+	.setDescription('Test function to do something. Literally could be anything. DEVELOPER ONLY.')
+	.addStringOption(option => 
+		option.setName('testthing')
+		.setDescription('bruhhhh')
+		.setRequired(true)
+	)
 ]
 	.map(command => command.toJSON());
 
