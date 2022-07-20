@@ -34,7 +34,7 @@ async function fetch_base_info(data, option){
             response = await data.playerInfo.profilePicture.avatarId;
             break;
         default:
-            response = "Info not found"
+            response = await data.playerInfo
     }
     return response
 }
@@ -83,7 +83,7 @@ async function fetch_char_info(data, index, option){
             response = await data.avatarInfoList[parseInt(index)].fetterInfo.expLevel;
             break;
         default:
-            response = "Info not found"
+            response = await data.avatarInfoList[parseInt(index)];
     }
     
     return response
