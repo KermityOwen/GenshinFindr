@@ -35,5 +35,7 @@ client.on("interactionCreate", async interaction => {
 
 })
 
+//700378769
+
 console.log(TOKEN)
 client.login(TOKEN)
