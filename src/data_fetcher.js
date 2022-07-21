@@ -6,11 +6,14 @@ async function fetch_data(UID){
     return JSON.parse(response)
 }
 
-async function fetch_base_info(data, option){
+async function get_base_info(data, option){
     let response = ""
     switch (option){
         case "nickname":
             response = await data.playerInfo.nickname;
+            break;
+        case "signature":
+            response = await data.playerInfo.signature;
             break;
         case "ar_level":
             response = await data.playerInfo.level;
@@ -89,6 +92,7 @@ async function get_char_info(data, index, option){
     return response
 }
 
+//2-down
 async function get_char_equip(data, index){
     const response = await data[parseInt(index)];
     return response;
@@ -97,7 +101,7 @@ async function get_char_equip(data, index){
 
 module.exports = {
     fetch_data,
-    fetch_base_info,
+    get_base_info,
     fetch_displayed_chars,
     get_char_info
 }
@@ -109,11 +113,11 @@ fetch_data(700378769).then(r => {
     fetch_base_info(r, option="prof_pic").then(r2 => {
         console.log(r2)
     });
-    */
+    
     get_char_info(r, 1, "equips_artifacts").then(r2 => {
         get_char_equip(r2, 2).then(r3 => {
             console.log(r3)
         })
     });
-    
+    */
 })

@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const findr_fetcher = require("./data_fetcher")
+const findr_handler = require("./data_handler")
 
 require("dotenv").config({ path: "../.env" })
 const TOKEN = process.env.BOT_TOKEN
@@ -26,13 +27,14 @@ client.on("interactionCreate", async interaction => {
     }
 
     if (commandName === "test"){ 
-        findr_fetcher.fetch_data(interaction.options.getString("testthing")).then(r => {
-            findr_fetcher.fetch_base_info(r, "nickname").then(r2 => {
-                interaction.reply(r2)
+        findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(r => {
+            //promises are a pain
+            findr_handler.create_player_embed(r).then(r2 => {
+                console.log(r2)
+                interaction.channel.send({ embeds: [r2] })
             })
         })
     }
-
 })
 
 //700378769
