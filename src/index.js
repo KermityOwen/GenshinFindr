@@ -30,7 +30,7 @@ client.on("interactionCreate", async interaction => {
         findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(r => {
             //promises are a pain
             findr_handler.create_player_embed(r).then(r2 => {
-                console.log(r2)
+                //console.log(r2)
                 interaction.channel.send({ embeds: [r2] })
             })
         })
