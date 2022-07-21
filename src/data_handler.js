@@ -1,5 +1,5 @@
 const { get_char_info , get_base_info, fetch_data} = require("./data_fetcher");
-const { MessageEmbed, EmbedBuilder } = require("discord.js");
+const { EmbedBuilder, AttachmentBuilder } = require("discord.js");
 
 async function create_player_embed(data){
     //Somehow + is faster for combining strings than concat so...
@@ -17,6 +17,7 @@ async function create_player_embed(data){
     .setColor('#29cf84')
     .setTitle(nickname)
     .setDescription(signature)
+    .setThumbnail("attachment://Childe.png")
     .addFields([
         { name: "Adventure Rank --- WR", value: `${arwr}` || "Error",},
         { name: "Highest Spiral Abyss (Version 2.8)", value: `${spiral}` || "Error" },
