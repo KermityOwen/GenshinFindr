@@ -45,7 +45,7 @@ async function fetch_displayed_chars(data){
 }
 
 
-async function fetch_char_info(data, index, option){
+async function get_char_info(data, index, option){
     let response = ""
     switch (option){
         case "char_id":
@@ -89,11 +89,17 @@ async function fetch_char_info(data, index, option){
     return response
 }
 
+async function get_char_equip(data, index){
+    const response = await data[parseInt(index)];
+    return response;
+}
+
+
 module.exports = {
     fetch_data,
     fetch_base_info,
     fetch_displayed_chars,
-    fetch_char_info
+    get_char_info
 }
 
 
@@ -104,8 +110,10 @@ fetch_data(700378769).then(r => {
         console.log(r2)
     });
     */
-    fetch_char_info(r, 1, "equips_artifacts").then(r2 => {
-        console.log(r2)
+    get_char_info(r, 1, "equips_artifacts").then(r2 => {
+        get_char_equip(r2, 2).then(r3 => {
+            console.log(r3)
+        })
     });
     
 })

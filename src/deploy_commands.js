@@ -12,7 +12,7 @@ const commands = [
 	.setName('test')
 	.setDescription('Test function to do something. Literally could be anything. DEVELOPER ONLY.')
 	.addStringOption(option => 
-		option.setName('testthing')
+		option.setName('test_var')
 		.setDescription('bruhhhh')
 		.setRequired(true)
 	)
