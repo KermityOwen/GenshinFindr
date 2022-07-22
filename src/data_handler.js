@@ -32,6 +32,7 @@ module.exports = {
     create_player_embed
 }
 
+/*
 fetch_data(700378769).then(r => {
     
     create_player_embed(r).then(r2 => {
@@ -39,3 +40,4 @@ fetch_data(700378769).then(r => {
     })
     
 })
+*/

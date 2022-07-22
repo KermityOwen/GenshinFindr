@@ -30,7 +30,7 @@ client.on("interactionCreate", async interaction => {
         findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(r => {
             findr_handler.create_player_embed(r).then(r2 => {
                 //console.log(r2)
-                interaction.channel.send({
+                interaction.reply({
                     embeds: [r2],
                     files: ["../resources/character_icons/Childe.png"]
                 })
@@ -41,5 +41,5 @@ client.on("interactionCreate", async interaction => {
 
 //700378769
 
-console.log(TOKEN)
+//console.log(TOKEN)
 client.login(TOKEN)
