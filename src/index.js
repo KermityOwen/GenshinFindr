@@ -32,7 +32,7 @@ client.on("interactionCreate", async interaction => {
                 //console.log(r2)
                 interaction.reply({
                     embeds: [r2],
-                    files: ["../resources/character_icons/Childe.png"]
+                    //files: ["../resources/character_icons/Character_Tartaglia.png"]
                 })
             })
         })

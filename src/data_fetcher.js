@@ -106,14 +106,14 @@ module.exports = {
     get_char_info
 }
 
-
+/*
 fetch_data(700378769).then(r => {
     //console.log(r)
-    /*
+    
     get_base_info(r, option="achievements").then(r2 => {
         console.log(r2)
     });
-    */
+    
     get_char_info(r, 1, "equips_artifacts").then(r2 => {
         get_char_equip(r2, 2).then(r3 => {
             console.log(r3)
@@ -121,3 +121,4 @@ fetch_data(700378769).then(r => {
     });
     
 })
+*/
