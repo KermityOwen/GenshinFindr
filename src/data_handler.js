@@ -108,7 +108,8 @@ async function create_character_embed(data, index=1){
     "\n\nLevel: " + props["4001"].val + "/" + get_max_lvl(props["1002"].val) + " (Ascension: " + props["1002"].val + "/6)" +
     "\nXP: " + props["1001"].ival +
     "\nConstellation: " + constellation +
-    "\nElement: " + gen_element(char_id);
+    "\nElement: " + gen_element(char_id) +
+    "\n<:space:840539867322777630>";
 
     const characterEmbed = new EmbedBuilder()
         .setColor('#29cf84')
@@ -116,19 +117,25 @@ async function create_character_embed(data, index=1){
         .setDescription(description)
         .setThumbnail(char_pic_url)
         .addFields([
-            { name: '\u200B', value: '\u200B' },
-            { name: "**__Max HP__**", value: `<:HP:971462863359180900> ${Math.round(fight_props["2000"])}`, inline: true},
-            { name: "**__Attack__**", value: `<:ATTACK:971462863346597958> ${Math.round(fight_props["2001"])}`, inline: true},
-            { name: "**__Defense__**", value: `<:DEFENSE:971462863300477008> ${Math.round(fight_props["2002"])}`, inline: true},
+            
+            { name: "**__Max HP__**", value: `**<:HP:971462863359180900> ${Math.round(fight_props["2000"])}**
+            *(${Math.round(fight_props["1"])}+${Math.round(fight_props["2000"])-Math.round(fight_props["1"])})*`, inline: true},
+
+            { name: "**__Attack__**", value: `**<:ATTACK:971462863346597958> ${Math.round(fight_props["2001"])}**
+            *(${Math.round(fight_props["4"])}+${Math.round(fight_props["2001"])-Math.round(fight_props["4"])})*`, inline: true},
+
+            { name: "**__Defense__**", value: `**<:DEFENSE:971462863300477008> ${Math.round(fight_props["2002"])}**
+            *(${Math.round(fight_props["7"])}+${Math.round(fight_props["2002"])-Math.round(fight_props["7"])})*`, inline: true},
+
             { name: "**__Elemental M.__**", value: `<:ELEMENT_MASTERY:971462862948151358> ${Math.round(fight_props["28"])}`, inline: true},
-            { name: "**__Energy Recharge__**", value: `<:CHARGE_EFFICIENCY:971462863229190154> ${(Math.round(fight_props["23"]*1000)/10).toFixed(1)}%`, inline: true},
+            { name: "**__Energy Recharge__**", value: `<:CHARGE_EFFICIENCY:971462863229190154> ${(Math.round(fight_props["23"]*1000)/10).toFixed(1)}% 
+            <:space:840539867322777630>`, inline: true},
+            { name: '\u200B', value: '\u200B', inline: true},
 
-            { name: '\u200B', value: '\u200B' },
-            { name: "**__Crit Rate__**", value: `${(Math.round(fight_props["20"]*1000)/10).toFixed(1)}%`, inline: true},
-            { name: "**__Crit Damage__**", value: `${(Math.round(fight_props["22"]*1000)/10).toFixed(1)}%`, inline: true},
-            { name: "**__Crit Multiplier__**", value: `${await (((await calculate_CM(fight_props))*1000)/10).toFixed(1)}%`}
-
-
+            { name: "**__Crit Rate__**", value: `<:CRITICAL:971462862935584829> ${(Math.round(fight_props["20"]*1000)/10).toFixed(1)}%`, inline: true},
+            { name: "**__Crit Damage__**", value: `<:CRITICAL_HURT:971462863254327357> ${(Math.round(fight_props["22"]*1000)/10).toFixed(1)}%`, inline: true},
+            //{ name: '\u200B', value: '\u200B', inline: true},
+            { name: "**__Crit Multiplier__**", value: `DMG x ${await (((await calculate_CM(fight_props))*1000)/10).toFixed(1)}%`, inline: true}
         ])
     
     return characterEmbed
