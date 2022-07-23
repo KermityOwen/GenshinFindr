@@ -54,29 +54,38 @@ function gen_constellation(const_arr){
     return (":small_blue_diamond:".repeat(amount) + ":white_small_square:".repeat(6-amount))
 }
 
-function gen_element(char_id){
-    let element = char_map[char_id].Element
+function gen_element(element){
     switch (element){
         case "Ice":
-            return "<:ICE_ADD_HURT:971462863384367114> Cryo <:ICE_ADD_HURT:971462863384367114>";
+        case 46:
+            return ["<:ICE_ADD_HURT:971462863384367114>", "Cryo"];
             break;
         case "Electric":
-            return "<:ELEC_ADD_HURT:971462863241773056> Electro <:ELEC_ADD_HURT:971462863241773056>";
+        case 41:
+            return ["<:ELEC_ADD_HURT:971462863241773056>", "Electro"];
             break;
         case "Fire":
-            return "<:FIRE_ADD_HURT:971462863354986546> Pyro <:FIRE_ADD_HURT:971462863354986546>";
+        case 40:
+            return ["<:FIRE_ADD_HURT:971462863354986546>", "Pyro"];
             break;
         case "Rock":
-            return "<:ROCK_ADD_HURT:971462863623454730> Geo <:ROCK_ADD_HURT:971462863623454730>";
+        case 45:
+            return ["<:ROCK_ADD_HURT:971462863623454730>", "Geo"];
             break;
         case "Water":
-            return "<:WATER_ADD_HURT:971462863392751707> Hydro <:WATER_ADD_HURT:971462863392751707>";
+        case 42:
+            return ["<:WATER_ADD_HURT:971462863392751707>", "Hydro"];
             break;
         case "Wind":
-            return "<:WIND_ADD_HURT:971462863011065877> Anemo <:WIND_ADD_HURT:971462863011065877>";
+        case 44:
+            return ["<:WIND_ADD_HURT:971462863011065877>", "Anemo"];
+            break;
+        case "Physical":
+        case 30:
+            return ["<:PHYSICAL_ADD_HURT:971462863371788330>", "Physical"];
             break;
         default:
-            return "<:GRASS_ADD_HURT:971462863287906354> Dendro <:GRASS_ADD_HURT:971462863287906354>";
+            return ["<:GRASS_ADD_HURT:971462863287906354>", "Dendro"];
     }
 }
 
@@ -88,6 +97,19 @@ function get_max_lvl(ascension){
     }
 }
 
+//FightProp Input
+function gen_determined_bonus(data){
+    if(data["30"] != 0){
+        return ["30", data["30"]];
+    } 
+    for (let i=40; i<=46; i++){
+        if (data[i] != 0){
+            return [i, data[i]];
+        }
+    }
+    return ["30", "0"]
+}
+
 async function create_character_embed(data, index=1){
     let player_name = await get_base_info(data, option="nickname")
     let char_id = await get_char_info(data, index, option="char_id")
@@ -97,18 +119,22 @@ async function create_character_embed(data, index=1){
 
     let name = names_map[char_map[char_id].NameTextMapHash]
     let title = (`${player_name}'s ${name}`)
+    let element = char_map[char_id].Element
 
     let char_pic = char_map[char_id].IconName
     let char_pic_url = "https://enka.network/ui/" + char_pic + ".png"
 
     let rarity = gen_rarity_stars(char_map[char_id].QualityType)
     let constellation = gen_constellation(await get_char_info(data, index, option="constellations_id"))
+    let dmg_bonus = gen_determined_bonus(fight_props)
+
+    console.log(dmg_bonus)
 
     let description = rarity +
     "\n\nLevel: " + props["4001"].val + "/" + get_max_lvl(props["1002"].val) + " (Ascension: " + props["1002"].val + "/6)" +
     "\nXP: " + props["1001"].ival +
     "\nConstellation: " + constellation +
-    "\nElement: " + gen_element(char_id) +
+    "\nElement: " + `${gen_element(element)[0]} ${gen_element(element)[1]} ${gen_element(element)[0]}` +
     "\n<:space:840539867322777630>";
 
     const characterEmbed = new EmbedBuilder()
@@ -134,8 +160,10 @@ async function create_character_embed(data, index=1){
 
             { name: "**__Crit Rate__**", value: `<:CRITICAL:971462862935584829> ${(Math.round(fight_props["20"]*1000)/10).toFixed(1)}%`, inline: true},
             { name: "**__Crit Damage__**", value: `<:CRITICAL_HURT:971462863254327357> ${(Math.round(fight_props["22"]*1000)/10).toFixed(1)}%`, inline: true},
-            //{ name: '\u200B', value: '\u200B', inline: true},
-            { name: "**__Crit Multiplier__**", value: `DMG x ${await (((await calculate_CM(fight_props))*1000)/10).toFixed(1)}%`, inline: true}
+            { name: "**__Crit Multiplier__**", value: `DMG x ${await (((await calculate_CM(fight_props))*1000)/10).toFixed(1)}%`, inline: true},
+
+            { name: `**__${gen_element(dmg_bonus[0])[1]} DMG Bonus__**`, value: `${gen_element(dmg_bonus[0])[0]} ${(Math.round(dmg_bonus[1]*1000)/10).toFixed(1)}%
+            <:space:840539867322777630>`, inline: true},
         ])
     
     return characterEmbed
