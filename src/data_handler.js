@@ -58,25 +58,25 @@ function gen_element(char_id){
     let element = char_map[char_id].Element
     switch (element){
         case "Ice":
-            return "<:ICE_ADD_HURT:971462863384367114> CRYO <:ICE_ADD_HURT:971462863384367114>";
+            return "<:ICE_ADD_HURT:971462863384367114> Cryo <:ICE_ADD_HURT:971462863384367114>";
             break;
         case "Electric":
-            return "<:ELEC_ADD_HURT:971462863241773056> ELECTRO <:ELEC_ADD_HURT:971462863241773056>";
+            return "<:ELEC_ADD_HURT:971462863241773056> Electro <:ELEC_ADD_HURT:971462863241773056>";
             break;
         case "Fire":
-            return "<:FIRE_ADD_HURT:971462863354986546> PYRO <:FIRE_ADD_HURT:971462863354986546>";
+            return "<:FIRE_ADD_HURT:971462863354986546> Pyro <:FIRE_ADD_HURT:971462863354986546>";
             break;
         case "Rock":
-            return "<:ROCK_ADD_HURT:971462863623454730> GEO <:ROCK_ADD_HURT:971462863623454730>";
+            return "<:ROCK_ADD_HURT:971462863623454730> Geo <:ROCK_ADD_HURT:971462863623454730>";
             break;
         case "Water":
-            return "<:WATER_ADD_HURT:971462863392751707> HYDRO <:WATER_ADD_HURT:971462863392751707>";
+            return "<:WATER_ADD_HURT:971462863392751707> Hydro <:WATER_ADD_HURT:971462863392751707>";
             break;
         case "Wind":
-            return "<:WIND_ADD_HURT:971462863011065877> ANEMO <:WIND_ADD_HURT:971462863011065877>"
+            return "<:WIND_ADD_HURT:971462863011065877> Anemo <:WIND_ADD_HURT:971462863011065877>";
             break;
         default:
-            return "<:GRASS_ADD_HURT:971462863287906354> DENDRO <:GRASS_ADD_HURT:971462863287906354>"
+            return "<:GRASS_ADD_HURT:971462863287906354> Dendro <:GRASS_ADD_HURT:971462863287906354>";
     }
 }
 
@@ -104,11 +104,11 @@ async function create_character_embed(data, index=1){
     let rarity = gen_rarity_stars(char_map[char_id].QualityType)
     let constellation = gen_constellation(await get_char_info(data, index, option="constellations_id"))
 
-    let description = rarity + 
-    "\n\nElement: " + gen_element(char_map[char_id].Element) +
-    "\nLevel: " + props["4001"].val + "/" + get_max_lvl(props["1002"].val) + " (Ascension: " + props["1002"].val + "/6)" +
-    "\nXP: " + props["1001"].ival + 
-    "\nConstellation: " + constellation;
+    let description = rarity +
+    "\n\nLevel: " + props["4001"].val + "/" + get_max_lvl(props["1002"].val) + " (Ascension: " + props["1002"].val + "/6)" +
+    "\nXP: " + props["1001"].ival +
+    "\nConstellation: " + constellation +
+    "\nElement: " + gen_element(char_id);
 
     const characterEmbed = new EmbedBuilder()
         .setColor('#29cf84')
