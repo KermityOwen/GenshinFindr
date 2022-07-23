@@ -57,7 +57,7 @@ async function get_char_info(data, index, option){
         case "constellations_id":
             response = await data.avatarInfoList[parseInt(index)].talentIdList;
             if (response == undefined){
-                response = [0]
+                response = []
             }
             break;
         case "char_properties":

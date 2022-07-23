@@ -40,7 +40,7 @@ client.on("interactionCreate", async interaction => {
 
     if (commandName === "test"){ 
         findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(r => {
-            findr_handler.create_character_embed(r, 1).then(r2 => {
+            findr_handler.create_character_embed(r, 0).then(r2 => {
                 //console.log(r2)
                 interaction.reply({
                     embeds: [r2],
