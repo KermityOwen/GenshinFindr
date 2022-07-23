@@ -9,6 +9,15 @@ const commands = [
 	.setDescription('Pongs with information on lag.'),
 
 	new SlashCommandBuilder()
+	.setName('find')
+	.setDescription('Gets player information from UID')
+	.addStringOption(option => 
+		option.setName('uid')
+		.setDescription('User ID')
+		.setRequired(true)
+	),
+
+	new SlashCommandBuilder()
 	.setName('test')
 	.setDescription('Test function to do something. Literally could be anything. DEVELOPER ONLY.')
 	.addStringOption(option => 

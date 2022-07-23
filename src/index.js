@@ -26,8 +26,8 @@ client.on("interactionCreate", async interaction => {
         interaction.reply(`Bot delay is ${t.createdTimestamp - interaction.createdTimestamp}ms.`)
     }
 
-    if (commandName === "test"){ 
-        findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(r => {
+    if (commandName === "find"){ 
+        findr_fetcher.fetch_data(interaction.options.getString("uid")).then(r => {
             findr_handler.create_player_embed(r).then(r2 => {
                 //console.log(r2)
                 interaction.reply({
