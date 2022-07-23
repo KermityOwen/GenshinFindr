@@ -13,7 +13,7 @@ const client = new Discord.Client({
 })
 
 client.once("ready", () => {
-    console.log("Bot up!")
+    console.log("wassup u sexy nerd")
 })
 
 client.on("interactionCreate", async interaction => {
