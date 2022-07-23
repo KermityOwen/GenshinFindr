@@ -41,7 +41,6 @@ async function calculate_CM(data){
 }
 
 async function create_character_embed(data, index=1){
-
     let player_name = await get_base_info(data, option="nickname")
     let name = names_map[char_map[await get_char_info(data, index, option="char_id")].NameTextMapHash]
     let title = (`${player_name}'s ${name}`)
@@ -49,11 +48,21 @@ async function create_character_embed(data, index=1){
     let char_pic = char_map[await get_char_info(data, index, option="char_id")].IconName
     let char_pic_url = "https://enka.network/ui/" + char_pic + ".png"
 
+    let fight_props = await get_char_info(data, index, option="fight_properties")
+
     const characterEmbed = new EmbedBuilder()
         .setColor('#29cf84')
         .setTitle(title)
         .setDescription('pending')
         .setThumbnail(char_pic_url)
+        .addFields([
+            { name: '\u200B', value: '\u200B' },
+            { name: "Max HP", value: `${Math.round(fight_props["2000"])}`, inline: true},
+            { name: "Attack", value: `${Math.round(fight_props["2001"])}`, inline: true},
+            { name: "Defense", value: `${Math.round(fight_props["2002"])}`, inline: true},
+            { name: "Crit Rate", value: `${(Math.round(fight_props["20"]*1000)/10).toFixed(1)}%`, inline: true},
+            { name: "Crit Damage", value: `${(Math.round(fight_props["22"]*1000)/10).toFixed(1)}%`, inline: true},
+        ])
     
     return characterEmbed
 }
