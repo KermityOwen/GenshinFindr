@@ -1,6 +1,7 @@
 const Discord = require("discord.js")
 const findr_fetcher = require("./data_fetcher")
 const findr_handler = require("./data_handler")
+const { create_player_embed, create_character_embed } = require("./data_formatter")
 
 require("dotenv").config({ path: "../.env" })
 const TOKEN = process.env.BOT_TOKEN
@@ -28,7 +29,7 @@ client.on("interactionCreate", async interaction => {
 
     if (commandName === "find"){ 
         findr_fetcher.fetch_data(interaction.options.getString("uid")).then(r => {
-            findr_handler.create_player_embed(r).then(r2 => {
+            create_player_embed(r).then(r2 => {
                 //console.log(r2)
                 interaction.reply({
                     embeds: [r2],
@@ -40,7 +41,7 @@ client.on("interactionCreate", async interaction => {
 
     if (commandName === "test"){ 
         findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(r => {
-            findr_handler.create_character_embed(r, 0).then(r2 => {
+            create_character_embed(r, 1).then(r2 => {
                 //console.log(r2)
                 interaction.reply({
                     embeds: [r2],

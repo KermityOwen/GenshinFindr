@@ -1,38 +1,4 @@
-const { get_char_info , get_base_info, fetch_data} = require("./data_fetcher");
-const { EmbedBuilder, AttachmentBuilder } = require("discord.js");
-
 const char_map = require("../resources/character_mapping.json");
-const names_map = require("../resources/names_mapping.json");
-const weapon_map = require("../resources/weapon_mapping.json")
-
-async function create_player_embed(data){
-    //Somehow + is faster for combining strings than concat so...
-    let arwr = ("AR: " + await get_base_info(data, option="ar_level") + " --- WR: " + await get_base_info(data, option="world_level"));
-    let signature = await get_base_info(data, option="signature")
-    //In the case of no signatures
-    if (signature == undefined){
-        signature = "*no signature"
-    }
-    let nickname = await get_base_info(data, option="nickname")
-    let spiral = await get_base_info(data, option="abyss_floor") + "-" + await get_base_info(data, option="abyss_chamber")
-    let achievements = await get_base_info(data, option="achievements")
-
-    let prof_pic = char_map[await get_base_info(data, option="prof_pic")].IconName
-    let prof_pic_url = "https://enka.network/ui/" + prof_pic + ".png"
-
-    const playerEmbed = new EmbedBuilder()
-    .setColor('#29cf84')
-    .setTitle(`**${nickname}**`)
-    .setDescription(signature)
-    .setThumbnail(prof_pic_url)
-    .addFields([
-        { name: "Adventure Rank --- WR", value: `${arwr}` || "Error",},
-        { name: "Highest Spiral Abyss (Version 2.8)", value: `${spiral}` || "Error" },
-        { name: "Number of Achievements", value: `${achievements}` || "Error" },
-    ]);
-    
-    return playerEmbed
-}
 
 async function calculate_CM(data){
     let crit_rate = await data["20"];
@@ -51,8 +17,12 @@ function gen_rarity_stars(rarity){
 
 function gen_constellation(const_arr){
     let amount = const_arr.length
-    let max_lvl = ""
+    //let max_lvl = ""
     return (":small_blue_diamond:".repeat(amount) + ":white_small_square:".repeat(6-amount))
+}
+
+function gen_refinement(refinement){
+    return (":small_blue_diamond:".repeat(refinement) + ":white_small_square:".repeat(5-refinement))
 }
 
 function gen_element(element){
@@ -101,15 +71,15 @@ function get_max_lvl(ascension){
 
 //FightProp Input
 function gen_determined_bonus(data){
-    if(data["30"] != 0){
-        return ["30", data["30"]];
+    if(data[30] != 0){
+        return [30, data["30"]];
     } 
     for (let i=40; i<=46; i++){
         if (data[i] != 0){
             return [i, data[i]];
         }
     }
-    return ["30", "0"]
+    return [30, "0"]
 }
 
 //SkillLevelMap and charId input
@@ -127,76 +97,16 @@ function det_weapon(data){
     }
 }
 
-async function create_character_embed(data, index=1){
-    let player_name = await get_base_info(data, option="nickname")
-    let char_id = await get_char_info(data, index, option="char_id")
-
-    let fight_props = await get_char_info(data, index, option="fight_properties")
-    let props = await get_char_info(data, index, option="char_properties")
-
-    let name = names_map[char_map[char_id].NameTextMapHash]
-    let title = (`${player_name}'s ${name}`)
-    let element = char_map[char_id].Element
-
-    let char_pic = char_map[char_id].IconName
-    let char_pic_url = "https://enka.network/ui/" + char_pic + ".png"
-
-    let rarity = gen_rarity_stars(char_map[char_id].QualityType)
-    let constellation = gen_constellation(await get_char_info(data, index, option="constellations_id"))
-    let dmg_bonus = gen_determined_bonus(fight_props)
-
-    let weapon = det_weapon(await get_char_info(data, index, option="equips"))
-
-    let description = rarity +
-    "\n\nLevel: " + props["4001"].val + "/" + get_max_lvl(props["1002"].val) + " (Ascension: " + props["1002"].val + "/6)" +
-    "\nXP: " + props["1001"].ival +
-    "\nConstellation: " + constellation +
-    "\nElement: " + `${gen_element(element)[0]} ${gen_element(element)[1]} ${gen_element(element)[0]}` +
-    "\n<:space:840539867322777630>";
-
-    const characterEmbed = new EmbedBuilder()
-        .setColor('#29cf84')
-        .setTitle(title)
-        .setDescription(description)
-        .setThumbnail(char_pic_url)
-        .addFields([
-            
-            { name: "**__Max HP__**", value: `**<:HP:971462863359180900> ${Math.round(fight_props["2000"])}**
-            *(${Math.round(fight_props["1"])}+${Math.round(fight_props["2000"])-Math.round(fight_props["1"])})*`, inline: true},
-
-            { name: "**__Attack__**", value: `**<:ATTACK:971462863346597958> ${Math.round(fight_props["2001"])}**
-            *(${Math.round(fight_props["4"])}+${Math.round(fight_props["2001"])-Math.round(fight_props["4"])})*`, inline: true},
-
-            { name: "**__Defense__**", value: `**<:DEFENSE:971462863300477008> ${Math.round(fight_props["2002"])}**
-            *(${Math.round(fight_props["7"])}+${Math.round(fight_props["2002"])-Math.round(fight_props["7"])})*`, inline: true},
-
-            { name: "**__Elemental M.__**", value: `<:ELEMENT_MASTERY:971462862948151358> ${Math.round(fight_props["28"])}`, inline: true},
-            { name: "**__Energy Recharge__**", value: `<:CHARGE_EFFICIENCY:971462863229190154> ${(Math.round(fight_props["23"]*1000)/10).toFixed(1)}% 
-            <:space:840539867322777630> `, inline: true},
-            { name: '\u200B', value: '\u200B', inline: true},
-
-            { name: "**__Crit Rate__**", value: `<:CRITICAL:971462862935584829> ${(Math.round(fight_props["20"]*1000)/10).toFixed(1)}%`, inline: true},
-            { name: "**__Crit Damage__**", value: `<:CRITICAL_HURT:971462863254327357> ${(Math.round(fight_props["22"]*1000)/10).toFixed(1)}%`, inline: true},
-            { name: "**__Crit Multiplier__**", value: `DMG x ${await (((await calculate_CM(fight_props))*1000)/10).toFixed(1)}%`, inline: true},
-
-            { name: `**__${gen_element(dmg_bonus[0])[1]} DMG Bonus__**`, value: `${gen_element(dmg_bonus[0])[0]} ${(Math.round(dmg_bonus[1]*1000)/10).toFixed(1)}%`, inline: true},
-            { name: '\u200B', value: '\u200B', inline: true},
-            { name: "**__Talent Levels__**", value: `${det_talent_level(char_id, await get_char_info(data, index, option="skills_lvl"))}
-            <:space:840539867322777630> `, inline: true},
-
-            { name: `**__Weapon --- ${names_map[weapon.flat.nameTextMapHash]}__**`, value:
-            `Level: ${weapon.weapon.level}/${get_max_lvl(weapon.weapon.promoteLevel)} (Ascension: ${weapon.weapon.promoteLevel})
-            `}
-
-        ])
-    
-    return characterEmbed
-}
-
-
 module.exports = {
-    create_player_embed,
-    create_character_embed
+    gen_constellation,
+    gen_determined_bonus,
+    gen_element,
+    gen_rarity_stars,
+    gen_refinement,
+    get_max_lvl,
+    det_talent_level,
+    det_weapon,
+    calculate_CM
 }
 
 /*
@@ -243,5 +153,5 @@ fs.writeFile("../resources/weapon_mapping.json", JSON.stringify(new_json, null, 
 
     console.log(new_json)
     console.log("JSON file has been saved.");
-})
+}) 
 */
