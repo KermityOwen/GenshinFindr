@@ -79,7 +79,7 @@ async function get_char_info(data, index, option){
         case "skills_lvl":
             response = await data.avatarInfoList[parseInt(index)].skillLevelMap;
             break;
-        case "equips_artifacts":
+        case "equips":
             response = await data.avatarInfoList[parseInt(index)].equipList;
             break;
         case "friendship_lvl":

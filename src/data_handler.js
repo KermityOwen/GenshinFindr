@@ -21,7 +21,7 @@ async function create_player_embed(data){
 
     const playerEmbed = new EmbedBuilder()
     .setColor('#29cf84')
-    .setTitle(nickname)
+    .setTitle(`**${nickname}**`)
     .setDescription(signature)
     .setThumbnail(prof_pic_url)
     .addFields([
@@ -89,6 +89,7 @@ function gen_element(element){
     }
 }
 
+//input int level of ascension
 function get_max_lvl(ascension){
     if (ascension <= 1){
         return ascension*20
@@ -110,6 +111,21 @@ function gen_determined_bonus(data){
     return ["30", "0"]
 }
 
+//SkillLevelMap and charId input
+function det_talent_level(char_id, skill_map){
+    ordered_skill_array = char_map[char_id].SkillOrder
+    return `${skill_map[ordered_skill_array[0]]} | ${skill_map[ordered_skill_array[1]]} | ${skill_map[ordered_skill_array[2]]}`
+}
+
+//input equiplist
+function det_weapon(data){
+    for (let i = 0; i<data.length; i++){
+        if (data[i].weapon != undefined){
+            return data[i]
+        }
+    }
+}
+
 async function create_character_embed(data, index=1){
     let player_name = await get_base_info(data, option="nickname")
     let char_id = await get_char_info(data, index, option="char_id")
@@ -128,7 +144,7 @@ async function create_character_embed(data, index=1){
     let constellation = gen_constellation(await get_char_info(data, index, option="constellations_id"))
     let dmg_bonus = gen_determined_bonus(fight_props)
 
-    console.log(dmg_bonus)
+    let weapon = det_weapon(await get_char_info(data, index, option="equips"))
 
     let description = rarity +
     "\n\nLevel: " + props["4001"].val + "/" + get_max_lvl(props["1002"].val) + " (Ascension: " + props["1002"].val + "/6)" +
@@ -162,12 +178,20 @@ async function create_character_embed(data, index=1){
             { name: "**__Crit Damage__**", value: `<:CRITICAL_HURT:971462863254327357> ${(Math.round(fight_props["22"]*1000)/10).toFixed(1)}%`, inline: true},
             { name: "**__Crit Multiplier__**", value: `DMG x ${await (((await calculate_CM(fight_props))*1000)/10).toFixed(1)}%`, inline: true},
 
-            { name: `**__${gen_element(dmg_bonus[0])[1]} DMG Bonus__**`, value: `${gen_element(dmg_bonus[0])[0]} ${(Math.round(dmg_bonus[1]*1000)/10).toFixed(1)}%
+            { name: `**__${gen_element(dmg_bonus[0])[1]} DMG Bonus__**`, value: `${gen_element(dmg_bonus[0])[0]} ${(Math.round(dmg_bonus[1]*1000)/10).toFixed(1)}%`, inline: true},
+            { name: '\u200B', value: '\u200B', inline: true},
+            { name: "**__Talent Levels__**", value: `${det_talent_level(char_id, await get_char_info(data, index, option="skills_lvl"))}
             <:space:840539867322777630>`, inline: true},
+
+            { name: `**__Weapon --- ${names_map[weapon.flat.nameTextMapHash]}__**`, value:
+            `Level: ${weapon.weapon.level}/${get_max_lvl(weapon.weapon.promoteLevel)} (Ascension: ${weapon.weapon.promoteLevel})
+            `}
+
         ])
     
     return characterEmbed
 }
+
 
 module.exports = {
     create_player_embed,
@@ -175,10 +199,10 @@ module.exports = {
 }
 
 /*
-fetch_data(700378769).then(r => {
+fetch_data(826235659).then(r => {
     
-    create_character_embed(r).then(r2 => {
-        console.log(r2)
+    create_character_embed(r, 0).then(r2 => {
+        
     })
     
 })
