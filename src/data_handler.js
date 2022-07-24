@@ -3,6 +3,7 @@ const { EmbedBuilder, AttachmentBuilder } = require("discord.js");
 
 const char_map = require("../resources/character_mapping.json");
 const names_map = require("../resources/names_mapping.json");
+const weapon_map = require("../resources/weapon_mapping.json")
 
 async function create_player_embed(data){
     //Somehow + is faster for combining strings than concat so...
@@ -171,7 +172,7 @@ async function create_character_embed(data, index=1){
 
             { name: "**__Elemental M.__**", value: `<:ELEMENT_MASTERY:971462862948151358> ${Math.round(fight_props["28"])}`, inline: true},
             { name: "**__Energy Recharge__**", value: `<:CHARGE_EFFICIENCY:971462863229190154> ${(Math.round(fight_props["23"]*1000)/10).toFixed(1)}% 
-            <:space:840539867322777630>`, inline: true},
+            <:space:840539867322777630> `, inline: true},
             { name: '\u200B', value: '\u200B', inline: true},
 
             { name: "**__Crit Rate__**", value: `<:CRITICAL:971462862935584829> ${(Math.round(fight_props["20"]*1000)/10).toFixed(1)}%`, inline: true},
@@ -181,7 +182,7 @@ async function create_character_embed(data, index=1){
             { name: `**__${gen_element(dmg_bonus[0])[1]} DMG Bonus__**`, value: `${gen_element(dmg_bonus[0])[0]} ${(Math.round(dmg_bonus[1]*1000)/10).toFixed(1)}%`, inline: true},
             { name: '\u200B', value: '\u200B', inline: true},
             { name: "**__Talent Levels__**", value: `${det_talent_level(char_id, await get_char_info(data, index, option="skills_lvl"))}
-            <:space:840539867322777630>`, inline: true},
+            <:space:840539867322777630> `, inline: true},
 
             { name: `**__Weapon --- ${names_map[weapon.flat.nameTextMapHash]}__**`, value:
             `Level: ${weapon.weapon.level}/${get_max_lvl(weapon.weapon.promoteLevel)} (Ascension: ${weapon.weapon.promoteLevel})
@@ -209,6 +210,7 @@ fetch_data(826235659).then(r => {
 
 
 const fs = require('fs');
+const template = require("../resources/weapon_mapping.json")
 
 for (let i = 10000002; i<10000066; i++){
     try{
@@ -218,13 +220,28 @@ for (let i = 10000002; i<10000066; i++){
     }
 }
 
-fs.writeFile("../resources/character_mapping.json", JSON.stringify(char_img_map, null, 4), 'utf8', function (err) {
+const new_json = {}
+//console.log(template[0].id)
+
+for (let i = 0; i<template.length; i++){
+    new_json[template[i].id] = {
+        "nameTextMapHash" : template[i].nameTextMapHash,
+        "descTextMapHash" : template[i].descTextMapHash,
+        "icon" : template[i].icon,
+        "weaponType" : template[i].weaponType,
+        "weaponRank" : template[i].rankLevel,
+        "awakenIcon" : template[i].awakenIcon,
+        "weaponProp" : template[i].weaponProp
+    }
+}
+
+fs.writeFile("../resources/weapon_mapping.json", JSON.stringify(new_json, null, 4), 'utf8', function (err) {
     if (err) {
         console.log("An error occured while writing JSON Object to File.");
         return console.log(err);
     }
 
-    console.log(char_img_map)
+    console.log(new_json)
     console.log("JSON file has been saved.");
 })
 */
