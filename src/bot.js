@@ -40,10 +40,10 @@ client.on("interactionCreate", async interaction => {
         })
     }
 
-    if (commandName === "test"){ 
-        findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(async r => {
+    if (commandName === "char"){ 
+        findr_fetcher.fetch_data(interaction.options.getString("uid")).then(async r => {
             const embed = await create_character_embed(r, 0);
-            const select = await create_select_character(r.avatarInfoList, interaction.options.getString("test_var"))
+            const select = await create_select_character(r.avatarInfoList, interaction.options.getString("uid"))
             /*for (let i = 0; i<r.avatarInfoList.length; i++){
                 embed.push(await create_character_embed(r, i))
             }*/

@@ -18,6 +18,15 @@ const commands = [
 	),
 
 	new SlashCommandBuilder()
+	.setName('char')
+	.setDescription('Gets player character information from UID')
+	.addStringOption(option => 
+		option.setName('uid')
+		.setDescription('User ID')
+		.setRequired(true)
+	),
+
+	new SlashCommandBuilder()
 	.setName('test')
 	.setDescription('Test function to do something. Literally could be anything. DEVELOPER ONLY.')
 	.addStringOption(option => 
