@@ -39,3 +39,5 @@ https://discord.com/api/oauth2/authorize?client_id=707937982816190495&permission
 
 ### License:
 - [GNU GPL3](License)
+
+SPECIAL THANKS TO ENKA AND IRIDIUM FOR THEIR AMAZING WORK THAT MADE THIS BOT POSSIBLE
