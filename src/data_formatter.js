@@ -1,5 +1,5 @@
 const { get_char_info , get_base_info, fetch_data} = require("./data_fetcher");
-const { EmbedBuilder, AttachmentBuilder } = require("discord.js");
+const { EmbedBuilder, AttachmentBuilder, ActionRowBuilder, SelectMenuBuilder } = require("discord.js");
 const { gen_constellation, gen_determined_bonus, gen_element, gen_rarity_stars, gen_refinement,
     get_max_lvl, det_talent_level, det_weapon, calculate_CM } = require("./data_handler")
 
@@ -111,9 +111,31 @@ async function create_character_embed(data, index=1){
     return characterEmbed
 }
 
-
+//input avatarInputList
+async function create_select_character (data, uid) {
+    const option = []
+    for (let i = 0; i < data.length; i++){
+        option.push(
+            {
+                label: `${names_map[char_map[data[i].avatarId].NameTextMapHash]}`,
+                value: `${i}-${uid}`
+            }
+        )
+    }
+    const row = new ActionRowBuilder()
+        .addComponents(
+            new SelectMenuBuilder()
+                .setCustomId("char_sel")
+                .setPlaceholder("Switch characters")
+                .addOptions(
+                    option
+                )
+        )
+    return row
+}
 
 module.exports = {
     create_player_embed,
-    create_character_embed
+    create_character_embed,
+    create_select_character
 }

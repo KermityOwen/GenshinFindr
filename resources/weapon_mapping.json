@@ -1,0 +1,3231 @@
+{
+    "10002": {
+        "nameTextMapHash": 2719832059,
+        "descTextMapHash": 108345869,
+        "icon": "UI_EquipIcon_Sword_Template",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Sword_Template_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "10003": {
+        "nameTextMapHash": 500987603,
+        "descTextMapHash": 3659741461,
+        "icon": "UI_EquipIcon_Claymore_Template",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Claymore_Template_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "10004": {
+        "nameTextMapHash": 1595734083,
+        "descTextMapHash": 2196960949,
+        "icon": "UI_EquipIcon_Pole_Template",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Pole_Template_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "10005": {
+        "nameTextMapHash": 2009975571,
+        "descTextMapHash": 2139398549,
+        "icon": "UI_EquipIcon_Catalyst_BookTemplate",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Catalyst_BookTemplate_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "10006": {
+        "nameTextMapHash": 4162981171,
+        "descTextMapHash": 2065390101,
+        "icon": "UI_EquipIcon_Catalyst_Template",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Template_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "10008": {
+        "nameTextMapHash": 3762437019,
+        "descTextMapHash": 4148596781,
+        "icon": "UI_EquipIcon_Bow_Template",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Bow_Template_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11101": {
+        "nameTextMapHash": 2410593283,
+        "descTextMapHash": 3807468957,
+        "icon": "UI_EquipIcon_Sword_Blunt",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Sword_Blunt_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11201": {
+        "nameTextMapHash": 2125206395,
+        "descTextMapHash": 2342805333,
+        "icon": "UI_EquipIcon_Sword_Silver",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 2,
+        "awakenIcon": "UI_EquipIcon_Sword_Silver_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 32.93000030517578,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11301": {
+        "nameTextMapHash": 479076483,
+        "descTextMapHash": 1214777829,
+        "icon": "UI_EquipIcon_Sword_Steel",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Sword_Steel_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.07660000026226044,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11302": {
+        "nameTextMapHash": 1608953539,
+        "descTextMapHash": 1716657229,
+        "icon": "UI_EquipIcon_Sword_Dawn",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Sword_Dawn_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.10199999809265137,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11303": {
+        "nameTextMapHash": 3673792067,
+        "descTextMapHash": 2969158189,
+        "icon": "UI_EquipIcon_Sword_Traveler",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Sword_Traveler_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 39.875099182128906,
+                "type": "GROW_CURVE_ATTACK_102"
+            },
+            {
+                "propType": "FIGHT_PROP_DEFENSE_PERCENT",
+                "initValue": 0.06373299658298492,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11304": {
+        "nameTextMapHash": 160493219,
+        "descTextMapHash": 4211009349,
+        "icon": "UI_EquipIcon_Sword_Darker",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Sword_Darker_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 30.600000381469727,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11305": {
+        "nameTextMapHash": 3421967235,
+        "descTextMapHash": 2798582285,
+        "icon": "UI_EquipIcon_Sword_Sashimi",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Sword_Sashimi_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.07660000026226044,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11306": {
+        "nameTextMapHash": 1388004931,
+        "descTextMapHash": 3086923557,
+        "icon": "UI_EquipIcon_Sword_Mitsurugi",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Sword_Mitsurugi_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.60749816894531,
+                "type": "GROW_CURVE_ATTACK_104"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.11333300173282623,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11401": {
+        "nameTextMapHash": 2474354867,
+        "descTextMapHash": 1169620325,
+        "icon": "UI_EquipIcon_Sword_Zephyrus",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Zephyrus_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.1333329975605011,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11402": {
+        "nameTextMapHash": 3587621259,
+        "descTextMapHash": 2174961477,
+        "icon": "UI_EquipIcon_Sword_Troupe",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Troupe_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11403": {
+        "nameTextMapHash": 1990641987,
+        "descTextMapHash": 4131542477,
+        "icon": "UI_EquipIcon_Sword_Fossil",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Fossil_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.1333329975605011,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11404": {
+        "nameTextMapHash": 2375993851,
+        "descTextMapHash": 1115870133,
+        "icon": "UI_EquipIcon_Sword_Theocrat",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Theocrat_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11405": {
+        "nameTextMapHash": 1321135667,
+        "descTextMapHash": 750378765,
+        "icon": "UI_EquipIcon_Sword_Rockkiller",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Rockkiller_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11406": {
+        "nameTextMapHash": 1991707099,
+        "descTextMapHash": 626666981,
+        "icon": "UI_EquipIcon_Sword_Proto",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Proto_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.07506699860095978,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11407": {
+        "nameTextMapHash": 4103022435,
+        "descTextMapHash": 904885541,
+        "icon": "UI_EquipIcon_Sword_Exotic",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Exotic_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 36,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11408": {
+        "nameTextMapHash": 3378007475,
+        "descTextMapHash": 2690715037,
+        "icon": "UI_EquipIcon_Sword_Blackrock",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Blackrock_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.07999999821186066,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11409": {
+        "nameTextMapHash": 3796905611,
+        "descTextMapHash": 1253880813,
+        "icon": "UI_EquipIcon_Sword_Bloodstained",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Bloodstained_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11410": {
+        "nameTextMapHash": 2947140987,
+        "descTextMapHash": 3674581941,
+        "icon": "UI_EquipIcon_Sword_Outlaw",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Outlaw_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.06869888305664,
+                "type": "GROW_CURVE_ATTACK_203"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 11.999987602233887,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11411": {
+        "nameTextMapHash": 1135130229,
+        "descTextMapHash": 1278086517,
+        "icon": "UI_EquipIcon_Sword_Blunt",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Blunt_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11412": {
+        "nameTextMapHash": 1773425155,
+        "descTextMapHash": 3798627613,
+        "icon": "UI_EquipIcon_Sword_Psalmus",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Psalmus_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.07660000026226044,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11413": {
+        "nameTextMapHash": 2749853923,
+        "descTextMapHash": 279012485,
+        "icon": "UI_EquipIcon_Sword_Magnum",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Magnum_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.10000000149011612,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11414": {
+        "nameTextMapHash": 1990820123,
+        "descTextMapHash": 1446802077,
+        "icon": "UI_EquipIcon_Sword_Bakufu",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Bakufu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11415": {
+        "nameTextMapHash": 342097547,
+        "descTextMapHash": 1249151821,
+        "icon": "UI_EquipIcon_Sword_Opus",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Opus_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_DEFENSE_PERCENT",
+                "initValue": 0.15013299882411957,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11416": {
+        "nameTextMapHash": 1012170803,
+        "descTextMapHash": 2752898277,
+        "icon": "UI_EquipIcon_Sword_Youtou",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_Youtou_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11419": {
+        "nameTextMapHash": 1499745907,
+        "descTextMapHash": 3371445901,
+        "icon": "UI_EquipIcon_Sword_YoutouEnchanted",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_YoutouEnchanted",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11420": {
+        "nameTextMapHash": 1538092267,
+        "descTextMapHash": 2589761045,
+        "icon": "UI_EquipIcon_Sword_YoutouShattered",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_YoutouShattered",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11421": {
+        "nameTextMapHash": 3464027035,
+        "descTextMapHash": 2488602445,
+        "icon": "UI_EquipIcon_Sword_YoutouEnchanted",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Sword_YoutouEnchanted",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.04500000178813934,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "11501": {
+        "nameTextMapHash": 902264035,
+        "descTextMapHash": 291327109,
+        "icon": "UI_EquipIcon_Sword_Falcon",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Falcon_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "11502": {
+        "nameTextMapHash": 4055003299,
+        "descTextMapHash": 3627658141,
+        "icon": "UI_EquipIcon_Sword_Dvalin",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Dvalin_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "11503": {
+        "nameTextMapHash": 2949448555,
+        "descTextMapHash": 1179976749,
+        "icon": "UI_EquipIcon_Sword_Widsith",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Widsith_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 43.20000076293945,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "11504": {
+        "nameTextMapHash": 944332883,
+        "descTextMapHash": 1389297045,
+        "icon": "UI_EquipIcon_Sword_Kunwu",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Kunwu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.1080000028014183,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "11505": {
+        "nameTextMapHash": 1345343763,
+        "descTextMapHash": 1273837837,
+        "icon": "UI_EquipIcon_Sword_Morax",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Morax_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 44.33580017089844,
+                "type": "GROW_CURVE_ATTACK_304"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.09600000083446503,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "11506": {
+        "nameTextMapHash": 231836963,
+        "descTextMapHash": 224422549,
+        "icon": "UI_EquipIcon_Sword_Blunt",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Blunt_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11507": {
+        "nameTextMapHash": 3780343147,
+        "descTextMapHash": 1210667381,
+        "icon": "UI_EquipIcon_Sword_Blunt",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Blunt_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11508": {
+        "nameTextMapHash": 1664039091,
+        "descTextMapHash": 2004615341,
+        "icon": "UI_EquipIcon_Sword_Blunt",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Blunt_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "11509": {
+        "nameTextMapHash": 4124851547,
+        "descTextMapHash": 1497683685,
+        "icon": "UI_EquipIcon_Sword_Narukami",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Narukami_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.09600000083446503,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "11510": {
+        "nameTextMapHash": 1600275315,
+        "descTextMapHash": 1849286797,
+        "icon": "UI_EquipIcon_Sword_Amenoma",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Sword_Amenoma_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.07199999690055847,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "12101": {
+        "nameTextMapHash": 2666951267,
+        "descTextMapHash": 2490958125,
+        "icon": "UI_EquipIcon_Claymore_Aniki",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Claymore_Aniki_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12201": {
+        "nameTextMapHash": 1182966603,
+        "descTextMapHash": 169605981,
+        "icon": "UI_EquipIcon_Claymore_Oyaji",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 2,
+        "awakenIcon": "UI_EquipIcon_Claymore_Oyaji_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 32.93000030517578,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12301": {
+        "nameTextMapHash": 1479961579,
+        "descTextMapHash": 1887050717,
+        "icon": "UI_EquipIcon_Claymore_Glaive",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Claymore_Glaive_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_HP_PERCENT",
+                "initValue": 0.07660000026226044,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12302": {
+        "nameTextMapHash": 4090429643,
+        "descTextMapHash": 3230364157,
+        "icon": "UI_EquipIcon_Claymore_Siegfry",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Claymore_Siegfry_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.60749816894531,
+                "type": "GROW_CURVE_ATTACK_104"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 40.79999923706055,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12303": {
+        "nameTextMapHash": 850802171,
+        "descTextMapHash": 2243594437,
+        "icon": "UI_EquipIcon_Claymore_Tin",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Claymore_Tin_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_DEFENSE_PERCENT",
+                "initValue": 0.09560000151395798,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12304": {
+        "nameTextMapHash": 1516554699,
+        "descTextMapHash": 3918253109,
+        "icon": "UI_EquipIcon_Claymore_Quartz",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Claymore_Quartz_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 30.600000381469727,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12305": {
+        "nameTextMapHash": 3097441915,
+        "descTextMapHash": 2797040229,
+        "icon": "UI_EquipIcon_Claymore_Reasoning",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Claymore_Reasoning_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.07660000026226044,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12306": {
+        "nameTextMapHash": 2614170427,
+        "descTextMapHash": 599093453,
+        "icon": "UI_EquipIcon_Claymore_Mitsurugi",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Claymore_Mitsurugi_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.09560000151395798,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12401": {
+        "nameTextMapHash": 735056795,
+        "descTextMapHash": 4068970301,
+        "icon": "UI_EquipIcon_Claymore_Zephyrus",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Zephyrus_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.1333329975605011,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12402": {
+        "nameTextMapHash": 930640955,
+        "descTextMapHash": 2055764669,
+        "icon": "UI_EquipIcon_Claymore_Troupe",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Troupe_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_HP_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12403": {
+        "nameTextMapHash": 1675686363,
+        "descTextMapHash": 3985911901,
+        "icon": "UI_EquipIcon_Claymore_Fossil",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Fossil_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.06666699796915054,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12404": {
+        "nameTextMapHash": 877751435,
+        "descTextMapHash": 205162989,
+        "icon": "UI_EquipIcon_Claymore_Theocrat",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Theocrat_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12405": {
+        "nameTextMapHash": 3684723963,
+        "descTextMapHash": 2688397213,
+        "icon": "UI_EquipIcon_Claymore_Perdue",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Perdue_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 36,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12406": {
+        "nameTextMapHash": 3722933411,
+        "descTextMapHash": 356356197,
+        "icon": "UI_EquipIcon_Claymore_Proto",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Proto_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12407": {
+        "nameTextMapHash": 680510411,
+        "descTextMapHash": 1683286045,
+        "icon": "UI_EquipIcon_Claymore_Exotic",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Exotic_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_DEFENSE_PERCENT",
+                "initValue": 0.11259999871253967,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12408": {
+        "nameTextMapHash": 20848859,
+        "descTextMapHash": 4287559013,
+        "icon": "UI_EquipIcon_Claymore_Blackrock",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Blackrock_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12409": {
+        "nameTextMapHash": 1437658243,
+        "descTextMapHash": 4199357237,
+        "icon": "UI_EquipIcon_Claymore_Kione",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Kione_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12410": {
+        "nameTextMapHash": 2006422931,
+        "descTextMapHash": 3110406349,
+        "icon": "UI_EquipIcon_Claymore_Lapis",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Lapis_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12411": {
+        "nameTextMapHash": 2753539619,
+        "descTextMapHash": 2688837757,
+        "icon": "UI_EquipIcon_Claymore_Dragonfell",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Dragonfell_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.07506699860095978,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12412": {
+        "nameTextMapHash": 346510395,
+        "descTextMapHash": 3519261853,
+        "icon": "UI_EquipIcon_Claymore_MillenniaTuna",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_MillenniaTuna_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12414": {
+        "nameTextMapHash": 4193089947,
+        "descTextMapHash": 2449465901,
+        "icon": "UI_EquipIcon_Claymore_Bakufu",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Bakufu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.10000000149011612,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12416": {
+        "nameTextMapHash": 2359799475,
+        "descTextMapHash": 4140001317,
+        "icon": "UI_EquipIcon_Claymore_Maria",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Claymore_Maria_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "12501": {
+        "nameTextMapHash": 1089950259,
+        "descTextMapHash": 2724154045,
+        "icon": "UI_EquipIcon_Claymore_Dvalin",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Dvalin_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.07999999821186066,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "12502": {
+        "nameTextMapHash": 3995710363,
+        "descTextMapHash": 401408237,
+        "icon": "UI_EquipIcon_Claymore_Wolfmound",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Wolfmound_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.1080000028014183,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "12503": {
+        "nameTextMapHash": 1075647299,
+        "descTextMapHash": 3478455989,
+        "icon": "UI_EquipIcon_Claymore_Widsith",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Widsith_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 49.137699127197266,
+                "type": "GROW_CURVE_ATTACK_303"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.04500000178813934,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "12504": {
+        "nameTextMapHash": 2792766467,
+        "descTextMapHash": 3341255373,
+        "icon": "UI_EquipIcon_Claymore_Kunwu",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Kunwu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.1080000028014183,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "12505": {
+        "nameTextMapHash": 977648923,
+        "descTextMapHash": 2108387445,
+        "icon": "UI_EquipIcon_Claymore_Aniki",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Aniki_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12506": {
+        "nameTextMapHash": 2597527627,
+        "descTextMapHash": 1872955621,
+        "icon": "UI_EquipIcon_Claymore_Aniki",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Aniki_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12508": {
+        "nameTextMapHash": 759708203,
+        "descTextMapHash": 2717637085,
+        "icon": "UI_EquipIcon_Claymore_Aniki",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Aniki_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12509": {
+        "nameTextMapHash": 2507837467,
+        "descTextMapHash": 4069665493,
+        "icon": "UI_EquipIcon_Claymore_Narukami",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Narukami_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "12510": {
+        "nameTextMapHash": 3914951691,
+        "descTextMapHash": 1789248637,
+        "icon": "UI_EquipIcon_Claymore_Itadorimaru",
+        "weaponType": "WEAPON_CLAYMORE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Claymore_Itadorimaru_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 44.33580017089844,
+                "type": "GROW_CURVE_ATTACK_304"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.19200000166893005,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "13101": {
+        "nameTextMapHash": 2796697027,
+        "descTextMapHash": 1707406541,
+        "icon": "UI_EquipIcon_Pole_Gewalt",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Pole_Gewalt_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "13201": {
+        "nameTextMapHash": 3070169307,
+        "descTextMapHash": 1460440477,
+        "icon": "UI_EquipIcon_Pole_Rod",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 2,
+        "awakenIcon": "UI_EquipIcon_Pole_Rod_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 32.93000030517578,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "13301": {
+        "nameTextMapHash": 1390797107,
+        "descTextMapHash": 3496480741,
+        "icon": "UI_EquipIcon_Pole_Ruby",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Pole_Ruby_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.050999999046325684,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "13302": {
+        "nameTextMapHash": 618786571,
+        "descTextMapHash": 4218316925,
+        "icon": "UI_EquipIcon_Pole_Halberd",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Pole_Halberd_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 39.875099182128906,
+                "type": "GROW_CURVE_ATTACK_102"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05106699839234352,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "13303": {
+        "nameTextMapHash": 4103766499,
+        "descTextMapHash": 2692633181,
+        "icon": "UI_EquipIcon_Pole_Noire",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Pole_Noire_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.60749816894531,
+                "type": "GROW_CURVE_ATTACK_104"
+            },
+            {
+                "propType": "FIGHT_PROP_HP_PERCENT",
+                "initValue": 0.10213299840688705,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "13304": {
+        "nameTextMapHash": 500612819,
+        "descTextMapHash": 3767447885,
+        "icon": "UI_EquipIcon_Pole_Flagpole",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Pole_Flagpole_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "13401": {
+        "nameTextMapHash": 2664629131,
+        "descTextMapHash": 1575094381,
+        "icon": "UI_EquipIcon_Pole_Stardust",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Stardust_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 48,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13402": {
+        "nameTextMapHash": 1154009435,
+        "descTextMapHash": 2616355533,
+        "icon": "UI_EquipIcon_Pole_Proto",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Proto_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.10000000149011612,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13403": {
+        "nameTextMapHash": 578575283,
+        "descTextMapHash": 4181232573,
+        "icon": "UI_EquipIcon_Pole_Exotic",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Exotic_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.07506699860095978,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13404": {
+        "nameTextMapHash": 481755219,
+        "descTextMapHash": 2074162709,
+        "icon": "UI_EquipIcon_Pole_Blackrock",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Blackrock_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13405": {
+        "nameTextMapHash": 4049410651,
+        "descTextMapHash": 885061045,
+        "icon": "UI_EquipIcon_Pole_Gladiator",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Gladiator_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.07999999821186066,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13406": {
+        "nameTextMapHash": 716252627,
+        "descTextMapHash": 366604621,
+        "icon": "UI_EquipIcon_Pole_Lapis",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Lapis_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13407": {
+        "nameTextMapHash": 3755004051,
+        "descTextMapHash": 2331820333,
+        "icon": "UI_EquipIcon_Pole_Zephyrus",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Zephyrus_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.06666699796915054,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13408": {
+        "nameTextMapHash": 2935286715,
+        "descTextMapHash": 219606109,
+        "icon": "UI_EquipIcon_Pole_Theocrat",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Theocrat_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13409": {
+        "nameTextMapHash": 3443142923,
+        "descTextMapHash": 3283185533,
+        "icon": "UI_EquipIcon_Pole_Everfrost",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Everfrost_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.15013299882411957,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13414": {
+        "nameTextMapHash": 2491797315,
+        "descTextMapHash": 4129402597,
+        "icon": "UI_EquipIcon_Pole_Bakufu",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Bakufu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 24,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13415": {
+        "nameTextMapHash": 1148024603,
+        "descTextMapHash": 1942599173,
+        "icon": "UI_EquipIcon_Pole_Mori",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Mori_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.10000000149011612,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13416": {
+        "nameTextMapHash": 4122509083,
+        "descTextMapHash": 1730885565,
+        "icon": "UI_EquipIcon_Pole_Maria",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Pole_Maria_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.06869888305664,
+                "type": "GROW_CURVE_ATTACK_203"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.029999999329447746,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "13501": {
+        "nameTextMapHash": 3235324891,
+        "descTextMapHash": 3487544829,
+        "icon": "UI_EquipIcon_Pole_Homa",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Pole_Homa_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.14399999380111694,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "13502": {
+        "nameTextMapHash": 4158505619,
+        "descTextMapHash": 2400004301,
+        "icon": "UI_EquipIcon_Pole_Dvalin",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Pole_Dvalin_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.07999999821186066,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "13503": {
+        "nameTextMapHash": 469555475,
+        "descTextMapHash": 2968469189,
+        "icon": "UI_EquipIcon_Pole_Gewalt",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Pole_Gewalt_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "13504": {
+        "nameTextMapHash": 197755235,
+        "descTextMapHash": 786121517,
+        "icon": "UI_EquipIcon_Pole_Kunwu",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Pole_Kunwu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.1080000028014183,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "13505": {
+        "nameTextMapHash": 1997709467,
+        "descTextMapHash": 1074834109,
+        "icon": "UI_EquipIcon_Pole_Morax",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Pole_Morax_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.04800000041723251,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "13506": {
+        "nameTextMapHash": 3532343811,
+        "descTextMapHash": 1699329373,
+        "icon": "UI_EquipIcon_Pole_Gewalt",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Pole_Gewalt_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "13507": {
+        "nameTextMapHash": 688991243,
+        "descTextMapHash": 4156676173,
+        "icon": "UI_EquipIcon_Pole_Santika",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Pole_Santika_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 49.137699127197266,
+                "type": "GROW_CURVE_ATTACK_303"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.035999998450279236,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "13509": {
+        "nameTextMapHash": 3717849275,
+        "descTextMapHash": 859215189,
+        "icon": "UI_EquipIcon_Pole_Narukami",
+        "weaponType": "WEAPON_POLE",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Pole_Narukami_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "14101": {
+        "nameTextMapHash": 3584825427,
+        "descTextMapHash": 62211301,
+        "icon": "UI_EquipIcon_Catalyst_Apprentice",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Apprentice_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14201": {
+        "nameTextMapHash": 2705029563,
+        "descTextMapHash": 728247149,
+        "icon": "UI_EquipIcon_Catalyst_Pocket",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 2,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Pocket_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 32.93000030517578,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14301": {
+        "nameTextMapHash": 2279290283,
+        "descTextMapHash": 1128957,
+        "icon": "UI_EquipIcon_Catalyst_Intro",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Intro_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.60749816894531,
+                "type": "GROW_CURVE_ATTACK_104"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 40.79999923706055,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14302": {
+        "nameTextMapHash": 3500935003,
+        "descTextMapHash": 4081562589,
+        "icon": "UI_EquipIcon_Catalyst_Pulpfic",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Pulpfic_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_HP_PERCENT",
+                "initValue": 0.07660000026226044,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14303": {
+        "nameTextMapHash": 1406746947,
+        "descTextMapHash": 201204037,
+        "icon": "UI_EquipIcon_Catalyst_Lightnov",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Lightnov_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.08500000089406967,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14304": {
+        "nameTextMapHash": 2963220587,
+        "descTextMapHash": 4004013141,
+        "icon": "UI_EquipIcon_Catalyst_Jade",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Jade_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 39.875099182128906,
+                "type": "GROW_CURVE_ATTACK_102"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 20.399999618530273,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14305": {
+        "nameTextMapHash": 3719372715,
+        "descTextMapHash": 2737744437,
+        "icon": "UI_EquipIcon_Catalyst_Phoney",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Phoney_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 39.875099182128906,
+                "type": "GROW_CURVE_ATTACK_102"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.03400000184774399,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14306": {
+        "nameTextMapHash": 302691299,
+        "descTextMapHash": 3867432845,
+        "icon": "UI_EquipIcon_Catalyst_Amber",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Amber_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 30.600000381469727,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14401": {
+        "nameTextMapHash": 623534363,
+        "descTextMapHash": 311411373,
+        "icon": "UI_EquipIcon_Catalyst_Zephyrus",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Zephyrus_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.10000000149011612,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14402": {
+        "nameTextMapHash": 1163263227,
+        "descTextMapHash": 3079323733,
+        "icon": "UI_EquipIcon_Catalyst_Troupe",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Troupe_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14403": {
+        "nameTextMapHash": 2195665683,
+        "descTextMapHash": 789905885,
+        "icon": "UI_EquipIcon_Catalyst_Fossil",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Fossil_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 48,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14404": {
+        "nameTextMapHash": 3827789435,
+        "descTextMapHash": 2717009405,
+        "icon": "UI_EquipIcon_Catalyst_Theocrat",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Theocrat_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14405": {
+        "nameTextMapHash": 37147251,
+        "descTextMapHash": 3980674549,
+        "icon": "UI_EquipIcon_Catalyst_Resurrection",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Resurrection_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14406": {
+        "nameTextMapHash": 2521338131,
+        "descTextMapHash": 1207804933,
+        "icon": "UI_EquipIcon_Catalyst_Proto",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Proto_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_HP_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14407": {
+        "nameTextMapHash": 1072884907,
+        "descTextMapHash": 727794477,
+        "icon": "UI_EquipIcon_Catalyst_Exotic",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Exotic_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 24,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14408": {
+        "nameTextMapHash": 3273999011,
+        "descTextMapHash": 3555971517,
+        "icon": "UI_EquipIcon_Catalyst_Blackrock",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Blackrock_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14409": {
+        "nameTextMapHash": 3156385731,
+        "descTextMapHash": 2055966237,
+        "icon": "UI_EquipIcon_Catalyst_Truelens",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Truelens_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14410": {
+        "nameTextMapHash": 3090373787,
+        "descTextMapHash": 2844428397,
+        "icon": "UI_EquipIcon_Catalyst_Outlaw",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Outlaw_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.06666699796915054,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14411": {
+        "nameTextMapHash": 415851979,
+        "descTextMapHash": 3629661149,
+        "icon": "UI_EquipIcon_Catalyst_Apprentice",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Apprentice_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14412": {
+        "nameTextMapHash": 2587614459,
+        "descTextMapHash": 234405637,
+        "icon": "UI_EquipIcon_Catalyst_Everfrost",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Everfrost_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14413": {
+        "nameTextMapHash": 3456986819,
+        "descTextMapHash": 746319397,
+        "icon": "UI_EquipIcon_Catalyst_Ludiharpastum",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Ludiharpastum_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14414": {
+        "nameTextMapHash": 2324146259,
+        "descTextMapHash": 4273575325,
+        "icon": "UI_EquipIcon_Catalyst_Bakufu",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Bakufu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.06666699796915054,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14415": {
+        "nameTextMapHash": 2539208459,
+        "descTextMapHash": 4267791309,
+        "icon": "UI_EquipIcon_Catalyst_Jyanome",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Jyanome_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "14501": {
+        "nameTextMapHash": 807607555,
+        "descTextMapHash": 929689749,
+        "icon": "UI_EquipIcon_Catalyst_Dvalin",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Dvalin_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.07199999690055847,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "14502": {
+        "nameTextMapHash": 1455107995,
+        "descTextMapHash": 2188385645,
+        "icon": "UI_EquipIcon_Catalyst_Fourwinds",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Fourwinds_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.07199999690055847,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "14503": {
+        "nameTextMapHash": 452043283,
+        "descTextMapHash": 3761771325,
+        "icon": "UI_EquipIcon_Catalyst_Apprentice",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Apprentice_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14504": {
+        "nameTextMapHash": 693354267,
+        "descTextMapHash": 1610195525,
+        "icon": "UI_EquipIcon_Catalyst_Kunwu",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Kunwu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.1080000028014183,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "14505": {
+        "nameTextMapHash": 4007372867,
+        "descTextMapHash": 1564641749,
+        "icon": "UI_EquipIcon_Catalyst_Apprentice",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Apprentice_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14506": {
+        "nameTextMapHash": 1890163363,
+        "descTextMapHash": 1589431549,
+        "icon": "UI_EquipIcon_Catalyst_Kaleido",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Kaleido_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_HP_PERCENT",
+                "initValue": 0.1080000028014183,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "14508": {
+        "nameTextMapHash": 4123950051,
+        "descTextMapHash": 3639034925,
+        "icon": "UI_EquipIcon_Catalyst_Apprentice",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Apprentice_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 44.33580017089844,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "14509": {
+        "nameTextMapHash": 310247243,
+        "descTextMapHash": 712713253,
+        "icon": "UI_EquipIcon_Catalyst_Narukami",
+        "weaponType": "WEAPON_CATALYST",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Catalyst_Narukami_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.14399999380111694,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "15101": {
+        "nameTextMapHash": 3600623979,
+        "descTextMapHash": 2408955477,
+        "icon": "UI_EquipIcon_Bow_Hunters",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 1,
+        "awakenIcon": "UI_EquipIcon_Bow_Hunters_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.2450008392334,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15201": {
+        "nameTextMapHash": 2340970067,
+        "descTextMapHash": 905810789,
+        "icon": "UI_EquipIcon_Bow_Old",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 2,
+        "awakenIcon": "UI_EquipIcon_Bow_Old_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 32.93000030517578,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15301": {
+        "nameTextMapHash": 3975746731,
+        "descTextMapHash": 367902357,
+        "icon": "UI_EquipIcon_Bow_Crowfeather",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Bow_Crowfeather_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 39.875099182128906,
+                "type": "GROW_CURVE_ATTACK_102"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 20.399999618530273,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15302": {
+        "nameTextMapHash": 656120259,
+        "descTextMapHash": 894007269,
+        "icon": "UI_EquipIcon_Bow_Arjuna",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Bow_Arjuna_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.10199999809265137,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15303": {
+        "nameTextMapHash": 4267718859,
+        "descTextMapHash": 851960253,
+        "icon": "UI_EquipIcon_Bow_Curve",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Bow_Curve_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.60749816894531,
+                "type": "GROW_CURVE_ATTACK_104"
+            },
+            {
+                "propType": "FIGHT_PROP_HP_PERCENT",
+                "initValue": 0.10213299840688705,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15304": {
+        "nameTextMapHash": 1021898539,
+        "descTextMapHash": 2260945613,
+        "icon": "UI_EquipIcon_Bow_Sling",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Bow_Sling_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.60749816894531,
+                "type": "GROW_CURVE_ATTACK_104"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.06800000369548798,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15305": {
+        "nameTextMapHash": 4139294531,
+        "descTextMapHash": 2838701821,
+        "icon": "UI_EquipIcon_Bow_Msg",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Bow_Msg_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 39.875099182128906,
+                "type": "GROW_CURVE_ATTACK_102"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.06800000369548798,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15306": {
+        "nameTextMapHash": 2242027395,
+        "descTextMapHash": 2789017349,
+        "icon": "UI_EquipIcon_Bow_Hardwood",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 3,
+        "awakenIcon": "UI_EquipIcon_Bow_Hardwood_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 38.74129867553711,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.07660000026226044,
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15401": {
+        "nameTextMapHash": 1240067179,
+        "descTextMapHash": 2697551509,
+        "icon": "UI_EquipIcon_Bow_Zephyrus",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Zephyrus_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.1333329975605011,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15402": {
+        "nameTextMapHash": 2556914683,
+        "descTextMapHash": 1284213621,
+        "icon": "UI_EquipIcon_Bow_Troupe",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Troupe_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 36,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15403": {
+        "nameTextMapHash": 2400012995,
+        "descTextMapHash": 59873837,
+        "icon": "UI_EquipIcon_Bow_Fossil",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Fossil_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.06666699796915054,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15404": {
+        "nameTextMapHash": 2832648187,
+        "descTextMapHash": 1025771861,
+        "icon": "UI_EquipIcon_Bow_Theocrat",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Theocrat_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15405": {
+        "nameTextMapHash": 3169209451,
+        "descTextMapHash": 3931321797,
+        "icon": "UI_EquipIcon_Bow_Recluse",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Recluse_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15406": {
+        "nameTextMapHash": 3625393819,
+        "descTextMapHash": 2174225037,
+        "icon": "UI_EquipIcon_Bow_Proto",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Proto_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15407": {
+        "nameTextMapHash": 411685275,
+        "descTextMapHash": 1166197037,
+        "icon": "UI_EquipIcon_Bow_Exotic",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Exotic_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.15013299882411957,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15408": {
+        "nameTextMapHash": 3447737235,
+        "descTextMapHash": 1032617965,
+        "icon": "UI_EquipIcon_Bow_Blackrock",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Blackrock_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.07999999821186066,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15409": {
+        "nameTextMapHash": 3439749859,
+        "descTextMapHash": 3378934725,
+        "icon": "UI_EquipIcon_Bow_Viridescent",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Viridescent_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15410": {
+        "nameTextMapHash": 2417717595,
+        "descTextMapHash": 726318957,
+        "icon": "UI_EquipIcon_Bow_Outlaw",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Outlaw_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15411": {
+        "nameTextMapHash": 2425414923,
+        "descTextMapHash": 3884152605,
+        "icon": "UI_EquipIcon_Bow_Fallensun",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Fallensun_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.06666699796915054,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15412": {
+        "nameTextMapHash": 3949653579,
+        "descTextMapHash": 2436529629,
+        "icon": "UI_EquipIcon_Bow_Nachtblind",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Nachtblind_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+                "initValue": 0.11259999871253967,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15413": {
+        "nameTextMapHash": 650049651,
+        "descTextMapHash": 1031521493,
+        "icon": "UI_EquipIcon_Bow_Fleurfair",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Fleurfair_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+                "initValue": 36,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15414": {
+        "nameTextMapHash": 4186179883,
+        "descTextMapHash": 852893197,
+        "icon": "UI_EquipIcon_Bow_Bakufu",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Bakufu_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 41.067100524902344,
+                "type": "GROW_CURVE_ATTACK_204"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15415": {
+        "nameTextMapHash": 540938627,
+        "descTextMapHash": 602632589,
+        "icon": "UI_EquipIcon_Bow_Predator",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Predator_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15416": {
+        "nameTextMapHash": 1860795787,
+        "descTextMapHash": 3698523357,
+        "icon": "UI_EquipIcon_Bow_Maria",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 4,
+        "awakenIcon": "UI_EquipIcon_Bow_Maria_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ]
+    },
+    "15501": {
+        "nameTextMapHash": 3933622347,
+        "descTextMapHash": 1491045405,
+        "icon": "UI_EquipIcon_Bow_Dvalin",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Dvalin_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.5369987487793,
+                "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.04800000041723251,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "15502": {
+        "nameTextMapHash": 828711395,
+        "descTextMapHash": 2543630901,
+        "icon": "UI_EquipIcon_Bow_Amos",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Amos_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.1080000028014183,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "15503": {
+        "nameTextMapHash": 3112679155,
+        "descTextMapHash": 1305978565,
+        "icon": "UI_EquipIcon_Bow_Widsith",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Widsith_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "initValue": 0.11999999731779099,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "15504": {
+        "nameTextMapHash": 565329475,
+        "descTextMapHash": 1330189981,
+        "icon": "UI_EquipIcon_Bow_Hunters",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Hunters_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15505": {
+        "nameTextMapHash": 1994081075,
+        "descTextMapHash": 1352415965,
+        "icon": "UI_EquipIcon_Bow_Hunters",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Hunters_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15506": {
+        "nameTextMapHash": 2824690859,
+        "descTextMapHash": 1315071109,
+        "icon": "UI_EquipIcon_Bow_Hunters",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Hunters_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.73509979248047,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    },
+    "15507": {
+        "nameTextMapHash": 1901973075,
+        "descTextMapHash": 2563714373,
+        "icon": "UI_EquipIcon_Bow_Worldbane",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Worldbane_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL",
+                "initValue": 0.07199999690055847,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "15508": {
+        "nameTextMapHash": 4230231107,
+        "descTextMapHash": 954648749,
+        "icon": "UI_EquipIcon_Bow_Kirin",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Kirin_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 44.33580017089844,
+                "type": "GROW_CURVE_ATTACK_304"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.19200000166893005,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "15509": {
+        "nameTextMapHash": 2918525947,
+        "descTextMapHash": 2907094261,
+        "icon": "UI_EquipIcon_Bow_Narukami",
+        "weaponType": "WEAPON_BOW",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_Bow_Narukami_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.9364013671875,
+                "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.14399999380111694,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ]
+    },
+    "20001": {
+        "nameTextMapHash": 4137694339,
+        "descTextMapHash": 1345258749,
+        "icon": "UI_EquipIcon_FishingRod",
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "weaponRank": 5,
+        "awakenIcon": "UI_EquipIcon_FishingRod_Awaken",
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 9.899999618530273,
+                "type": "GROW_CURVE_ATTACK_101"
+            },
+            {
+                "type": "GROW_CURVE_CRITICAL_101"
+            }
+        ]
+    }
+}

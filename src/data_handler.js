@@ -109,6 +109,7 @@ module.exports = {
     calculate_CM
 }
 
+
 /*
 fetch_data(826235659).then(r => {
     

@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 const findr_fetcher = require("./data_fetcher")
 const findr_handler = require("./data_handler")
-const { create_player_embed, create_character_embed } = require("./data_formatter")
+const { create_player_embed, create_character_embed, create_select_character } = require("./data_formatter")
 
 require("dotenv").config({ path: "../.env" })
 const TOKEN = process.env.BOT_TOKEN
@@ -18,7 +18,8 @@ client.once("ready", () => {
 })
 
 client.on("interactionCreate", async interaction => {
-    if (!(interaction.type === Discord.InteractionType.ApplicationCommand)) return;
+    if (!(interaction.type === Discord.InteractionType.ApplicationCommand) &&
+    !interaction.isSelectMenu()) return;
 
     const { commandName } = interaction
 
@@ -40,13 +41,32 @@ client.on("interactionCreate", async interaction => {
     }
 
     if (commandName === "test"){ 
-        findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(r => {
-            create_character_embed(r, 1).then(r2 => {
-                //console.log(r2)
-                interaction.reply({
-                    embeds: [r2],
-                    //files: ["../resources/character_icons/Character_Tartaglia.png"]
-                })
+        findr_fetcher.fetch_data(interaction.options.getString("test_var")).then(async r => {
+            const embed = await create_character_embed(r, 0);
+            const select = await create_select_character(r.avatarInfoList, interaction.options.getString("test_var"))
+            /*for (let i = 0; i<r.avatarInfoList.length; i++){
+                embed.push(await create_character_embed(r, i))
+            }*/
+            //console.log(select.components[0].options[0].data.label)
+            interaction.reply({
+                embeds: [embed],
+                components: [select],
+            })
+        })
+    }
+
+    if (interaction.customId === 'char_sel'){
+        c_uid_arr = (interaction.values[0]).split('-');
+        findr_fetcher.fetch_data(c_uid_arr[1]).then(async r => {
+            const embed = await create_character_embed(r, c_uid_arr[0]);
+            //const select = await create_select_character(r.avatarInfoList, c_uid_arr[1])
+            /*for (let i = 0; i<r.avatarInfoList.length; i++){
+                embed.push(await create_character_embed(r, i))
+            }*/
+            //console.log(select.components[0].options[0].data.label)
+            interaction.update({
+                embeds: [embed],
+                //components: [select],
             })
         })
     }
