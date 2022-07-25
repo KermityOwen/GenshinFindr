@@ -102,7 +102,7 @@ async function create_character_embed(data, index=1){
         .addFields([
             { name: `**__Weapon --- ${names_map[weapon.flat.nameTextMapHash]}__**`, value:
             `**Level:** ${weapon.weapon.level}/${get_max_lvl(weapon.weapon.promoteLevel)} (Ascension: ${weapon.weapon.promoteLevel}/6)
-            **Refinement:** ${ gen_refinement(weapon.weapon.affixMap[`1${weapon.itemId}`]) }
+            **Refinement:** ${ gen_refinement(weapon.weapon.affixMap[`1${weapon.itemId}`]+1) }
             **Attack:** <:ATTACK:971462863346597958>${weapon.flat.weaponStats[0].statValue}
             **${names_map[weapon.flat.weaponStats[1].appendPropId]}:** ${weapon.flat.weaponStats[1].statValue}%`}
         ])
