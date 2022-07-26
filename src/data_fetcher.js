@@ -1,9 +1,13 @@
 const fetch = require("node-fetch");
 
-async function fetch_data(UID){
+async function fetch_data(UID, callback){
     let url = "https://enka.network/u/"+UID+"/__data.json"
     const response = await fetch(url).then(r => r.text())
-    return JSON.parse(response)
+    if (response == "{}"){
+        return callback(Error ("Data cannot be fetched"))
+    } else {
+        return callback(null, JSON.parse(response))
+    }
 }
 
 async function get_base_info(data, option){
@@ -106,11 +110,17 @@ module.exports = {
     get_char_info
 }
 
-
-fetch_data(700378769).then(r => {
+/*
+fetch_data(0, function(err, result) {
+    if(err){
+        console.log('error')
+    } else {
+        console.log(`no error`)
+    }
+}).then(r => {
     //console.log(r)
+   
     
-    /*
     get_base_info(r, option="achievements").then(r2 => {
         console.log(r2)
     });
@@ -118,5 +128,6 @@ fetch_data(700378769).then(r => {
     get_char_info(r, 1, "char_id").then(r2 => {
         console.log(r2)
     });
-    */
+   
 })
+*/

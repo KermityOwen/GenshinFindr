@@ -22,7 +22,7 @@ https://discord.com/api/oauth2/authorize?client_id=707937982816190495&permission
 ---
 
 ### Commands:
-[CLICK HERE](COMMANDHELP.md) for detailed guide on all the commands you can use!
+[CLICK HERE](READMEs/COMMANDHELP.md) for detailed guide on all the commands you can use!
 
 ---
 
