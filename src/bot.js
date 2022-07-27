@@ -61,7 +61,7 @@ client.on("interactionCreate", async interaction => {
                         error_thrown = true;
                     }
                 });
-                const select = await create_select_character(r.avatarInfoList, interaction.options.getString("uid"), async function(err){
+                const select = await create_select_character(r.avatarInfoList, interaction.options.getString("uid"), async function(err, r){
                     if (err){
                         console.log("Error creating select menu")
                     }
@@ -78,12 +78,17 @@ client.on("interactionCreate", async interaction => {
 
     if (interaction.customId === 'char_sel'){
         c_uid_arr = (interaction.values[0]).split('-');
-        findr_fetcher.fetch_data(c_uid_arr[1]).then(async r => {
-            const embed = await create_character_embed(r, c_uid_arr[0]);
-            interaction.update({
-                embeds: [embed],
-
-            })
+        findr_fetcher.fetch_data(c_uid_arr[1], async function (err, r){
+            if (err){
+                interaction.reply({
+                    embeds: [{Title: "Error text"}]
+                })
+            } else {
+                const embed = await create_character_embed(r, c_uid_arr[0]);
+                interaction.update({
+                    embeds: [embed],
+                })
+            }
         })
     }
 })
