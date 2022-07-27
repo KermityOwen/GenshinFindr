@@ -53,19 +53,24 @@ client.on("interactionCreate", async interaction => {
                     embeds: [{Title: "This UID is invalid. Please try again."}]
                 })
             } else {
-                const embed = await create_character_embed(r, 0, async function(err){
+                const embed = await create_character_embed(r, 0, async function(err, r){
                     if (err){
                         interaction.reply({
                             embeds: [{Title: "There are no characters on display for this user"}]
                         })
                         error_thrown = true;
+                    } else {
+                        return r
                     }
                 });
                 const select = await create_select_character(r.avatarInfoList, interaction.options.getString("uid"), async function(err, r){
                     if (err){
                         console.log("Error creating select menu")
+                    } else {
+                        return r
                     }
                 });
+                console.log(embed)
                 if (!error_thrown){
                     interaction.reply({
                         embeds: [embed],
@@ -84,7 +89,13 @@ client.on("interactionCreate", async interaction => {
                     embeds: [{Title: "Error text"}]
                 })
             } else {
-                const embed = await create_character_embed(r, c_uid_arr[0]);
+                const embed = await create_character_embed(r, c_uid_arr[0], function (err, r){
+                    if (err){
+                        console.log(err)
+                    } else {
+                        return r
+                    }
+                });
                 interaction.update({
                     embeds: [embed],
                 })

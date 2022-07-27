@@ -9,3 +9,6 @@ V1.1-beta:
 - Added license, updatelog and READMEs
 - Fixed invalid UID bug that causes backend to crash
 - Fixed bug where if the player had no characters on display it crashes the bot
+
+- Fixed bug where server crashes if user tries to change characters from an embed sent too long ago
+- Fixed all bugs regarding callbacks
