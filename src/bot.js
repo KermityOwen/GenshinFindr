@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 const findr_fetcher = require("./data_fetcher")
 const findr_handler = require("./data_handler")
-const { create_player_embed, create_character_embed, create_select_character } = require("./data_formatter")
+const { create_player_embed, create_character_embed, create_select_character, create_artifact_embed } = require("./data_formatter")
 
 require("dotenv").config({ path: "../.env" })
 const TOKEN = process.env.BOT_TOKEN
@@ -68,6 +68,20 @@ client.on("interactionCreate", async interaction => {
                 embeds: [embed],
                 //components: [select],
             })
+        })
+    }
+
+    if (commandName === "test"){
+        findr_fetcher.fetch_data(interaction.options.getString("test_var"), async function (err, r){
+            if(err){
+
+            } else {
+                const embed = await create_artifact_embed(r, 0)
+                console.log(embed)
+                interaction.reply({
+                    embeds: [embed]
+                })
+            }
         })
     }
 })

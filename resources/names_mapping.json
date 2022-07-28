@@ -378,6 +378,7 @@
         "4273845410": "Xinyan",
         "4275754179": "Wolfish Tracker",
         "FIGHT_PROP_MAX_HP": "Max HP",
+        "FIGHT_PROP_HP": "HP",
         "FIGHT_PROP_ATTACK": "Attack",
         "FIGHT_PROP_DEFENSE": "Defense",
         "FIGHT_PROP_ATTACK_PERCENT": "Attack% Bonus",

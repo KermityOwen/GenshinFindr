@@ -97,6 +97,16 @@ function det_weapon(data){
     }
 }
 
+function det_artifact(data){
+    let artifacts = []
+    for (let i = 0; i<data.length; i++){
+        if (data[i].reliquary != undefined){
+            artifacts.push(data[i])
+        }
+    }
+    return artifacts
+}
+
 module.exports = {
     gen_constellation,
     gen_determined_bonus,
@@ -106,7 +116,8 @@ module.exports = {
     get_max_lvl,
     det_talent_level,
     det_weapon,
-    calculate_CM
+    calculate_CM,
+    det_artifact
 }
 
 
@@ -118,41 +129,4 @@ fetch_data(826235659).then(r => {
     })
     
 })
-
-
-const fs = require('fs');
-const template = require("../resources/weapon_mapping.json")
-
-for (let i = 10000002; i<10000066; i++){
-    try{
-        char_img_map[i].CharName = char_img_map[i].SideIconName.replace('UI_AvatarIcon_Side_','')
-    } catch (e) {
-        //console.log(i)
-    }
-}
-
-const new_json = {}
-//console.log(template[0].id)
-
-for (let i = 0; i<template.length; i++){
-    new_json[template[i].id] = {
-        "nameTextMapHash" : template[i].nameTextMapHash,
-        "descTextMapHash" : template[i].descTextMapHash,
-        "icon" : template[i].icon,
-        "weaponType" : template[i].weaponType,
-        "weaponRank" : template[i].rankLevel,
-        "awakenIcon" : template[i].awakenIcon,
-        "weaponProp" : template[i].weaponProp
-    }
-}
-
-fs.writeFile("../resources/weapon_mapping.json", JSON.stringify(new_json, null, 4), 'utf8', function (err) {
-    if (err) {
-        console.log("An error occured while writing JSON Object to File.");
-        return console.log(err);
-    }
-
-    console.log(new_json)
-    console.log("JSON file has been saved.");
-}) 
 */
