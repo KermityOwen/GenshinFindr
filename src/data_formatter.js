@@ -1,11 +1,12 @@
 const { get_char_info , get_base_info, fetch_data} = require("./data_fetcher");
 const { EmbedBuilder, AttachmentBuilder, ActionRowBuilder, SelectMenuBuilder } = require("discord.js");
 const { gen_constellation, gen_determined_bonus, gen_element, gen_rarity_stars, gen_refinement,
-    get_max_lvl, det_talent_level, det_weapon, calculate_CM } = require("./data_handler")
+    get_max_lvl, det_talent_level, det_weapon, calculate_CM, det_artifact } = require("./data_handler")
 
 const char_map = require("../resources/character_mapping.json");
 const names_map = require("../resources/names_mapping.json");
-const weapon_map = require("../resources/weapon_mapping.json")
+const weapon_map = require("../resources/weapon_mapping.json");
+const relic_map = require("../resources/artifacts_mapping.json");
 
 async function create_player_embed(data){
     //Somehow + is faster for combining strings than concat so...
@@ -142,8 +143,36 @@ async function create_select_character (data, uid, callback) {
     }
 }
 
+async function create_artifact_embed(data, index){
+    try{
+        let player_name = await get_base_info(data, option="nickname")
+        let char_id = await get_char_info(data, index, option="char_id")
+        let title = (`${player_name}'s ${names_map[char_map[char_id].NameTextMapHash]}'s Artifacts`)
+
+        let char_pic = char_map[char_id].IconName
+        let char_pic_url = "https://enka.network/ui/" + char_pic + ".png"
+
+        let artifacts = det_artifact(await get_char_info(data, index, option="equips"))
+        
+        const artifactsEmbed = new EmbedBuilder()
+            .setColor('#29cf84')
+            .setTitle(title)
+            .setThumbnail(char_pic_url)
+            .setFields([
+
+                { name: `${ relic_map[artifacts[0].flat.nameTextMapHash] } (Lv. ${artifacts[0].reliquary.level - 1})\n${ ":star:".repeat(artifacts[0].flat.rankLevel) }`, value: 
+                `**Main Stat (${ names_map[artifacts[0].flat.reliquaryMainstat.mainPropId] }):** +${artifacts[0].flat.reliquaryMainstat.statValue}`}
+            ])
+        console.log(artifacts[0])
+        return artifactsEmbed
+    } catch (e){
+        console.log(e)
+    }
+}
+
 module.exports = {
     create_player_embed,
     create_character_embed,
-    create_select_character
+    create_select_character,
+    create_artifact_embed
 }
