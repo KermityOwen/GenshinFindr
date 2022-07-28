@@ -108,7 +108,7 @@ client.on("interactionCreate", async interaction => {
             if(err){
 
             } else {
-                const embed = await create_artifact_embed(r, 0)
+                const embed = await create_artifact_embed(r, 1)
                 console.log(embed)
                 interaction.reply({
                     embeds: [embed]

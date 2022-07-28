@@ -7,6 +7,7 @@ const char_map = require("../resources/character_mapping.json");
 const names_map = require("../resources/names_mapping.json");
 const weapon_map = require("../resources/weapon_mapping.json");
 const relic_map = require("../resources/artifacts_mapping.json");
+const emoji_map =require("../resources/emojis_mapping.json")
 
 async function create_player_embed(data){
     //Somehow + is faster for combining strings than concat so...
@@ -161,9 +162,43 @@ async function create_artifact_embed(data, index){
             .setFields([
 
                 { name: `${ relic_map[artifacts[0].flat.nameTextMapHash] } (Lv. ${artifacts[0].reliquary.level - 1})\n${ ":star:".repeat(artifacts[0].flat.rankLevel) }`, value: 
-                `**Main Stat (${ names_map[artifacts[0].flat.reliquaryMainstat.mainPropId] }):** +${artifacts[0].flat.reliquaryMainstat.statValue}`}
+                `**${emoji_map[artifacts[0].flat.reliquaryMainstat.mainPropId]}Main Stat (${ names_map[artifacts[0].flat.reliquaryMainstat.mainPropId] }):** +${artifacts[0].flat.reliquaryMainstat.statValue}
+                **${emoji_map[artifacts[0].flat.reliquarySubstats[0].appendPropId]}Sub Stat (${ names_map[artifacts[0].flat.reliquarySubstats[0].appendPropId] }):** +${artifacts[0].flat.reliquarySubstats[0].statValue}
+                **${emoji_map[artifacts[0].flat.reliquarySubstats[1].appendPropId]}Sub Stat (${ names_map[artifacts[0].flat.reliquarySubstats[1].appendPropId] }):** +${artifacts[0].flat.reliquarySubstats[1].statValue}
+                **${emoji_map[artifacts[0].flat.reliquarySubstats[2].appendPropId]}Sub Stat (${ names_map[artifacts[0].flat.reliquarySubstats[2].appendPropId] }):** +${artifacts[0].flat.reliquarySubstats[2].statValue}
+                **${emoji_map[artifacts[0].flat.reliquarySubstats[3].appendPropId]}Sub Stat (${ names_map[artifacts[0].flat.reliquarySubstats[3].appendPropId] }):** +${artifacts[0].flat.reliquarySubstats[3].statValue}`},
+
+                { name: `${ relic_map[artifacts[1].flat.nameTextMapHash] } (Lv. ${artifacts[1].reliquary.level - 1})\n${ ":star:".repeat(artifacts[1].flat.rankLevel) }`, value: 
+                `**${emoji_map[artifacts[1].flat.reliquaryMainstat.mainPropId]}Main Stat (${ names_map[artifacts[1].flat.reliquaryMainstat.mainPropId] }):** +${artifacts[1].flat.reliquaryMainstat.statValue}
+                **${emoji_map[artifacts[1].flat.reliquarySubstats[0].appendPropId]}Sub Stat (${ names_map[artifacts[1].flat.reliquarySubstats[0].appendPropId] }):** +${artifacts[1].flat.reliquarySubstats[0].statValue}
+                **${emoji_map[artifacts[1].flat.reliquarySubstats[1].appendPropId]}Sub Stat (${ names_map[artifacts[1].flat.reliquarySubstats[1].appendPropId] }):** +${artifacts[1].flat.reliquarySubstats[1].statValue}
+                **${emoji_map[artifacts[1].flat.reliquarySubstats[2].appendPropId]}Sub Stat (${ names_map[artifacts[1].flat.reliquarySubstats[2].appendPropId] }):** +${artifacts[1].flat.reliquarySubstats[2].statValue}
+                **${emoji_map[artifacts[1].flat.reliquarySubstats[3].appendPropId]}Sub Stat (${ names_map[artifacts[1].flat.reliquarySubstats[3].appendPropId] }):** +${artifacts[1].flat.reliquarySubstats[3].statValue}`},
+
+                { name: `${ relic_map[artifacts[2].flat.nameTextMapHash] } (Lv. ${artifacts[2].reliquary.level - 1})\n${ ":star:".repeat(artifacts[2].flat.rankLevel) }`, value: 
+                `**${emoji_map[artifacts[2].flat.reliquaryMainstat.mainPropId]}Main Stat (${ names_map[artifacts[2].flat.reliquaryMainstat.mainPropId] }):** +${artifacts[2].flat.reliquaryMainstat.statValue}
+                **${emoji_map[artifacts[2].flat.reliquarySubstats[0].appendPropId]}Sub Stat (${ names_map[artifacts[2].flat.reliquarySubstats[0].appendPropId] }):** +${artifacts[2].flat.reliquarySubstats[0].statValue}
+                **${emoji_map[artifacts[2].flat.reliquarySubstats[1].appendPropId]}Sub Stat (${ names_map[artifacts[2].flat.reliquarySubstats[1].appendPropId] }):** +${artifacts[2].flat.reliquarySubstats[1].statValue}
+                **${emoji_map[artifacts[2].flat.reliquarySubstats[2].appendPropId]}Sub Stat (${ names_map[artifacts[2].flat.reliquarySubstats[2].appendPropId] }):** +${artifacts[2].flat.reliquarySubstats[2].statValue}
+                **${emoji_map[artifacts[2].flat.reliquarySubstats[3].appendPropId]}Sub Stat (${ names_map[artifacts[2].flat.reliquarySubstats[3].appendPropId] }):** +${artifacts[2].flat.reliquarySubstats[3].statValue}`},
+
+                { name: `${ relic_map[artifacts[3].flat.nameTextMapHash] } (Lv. ${artifacts[3].reliquary.level - 1})\n${ ":star:".repeat(artifacts[3].flat.rankLevel) }`, value: 
+                `**${emoji_map[artifacts[3].flat.reliquaryMainstat.mainPropId]}Main Stat (${ names_map[artifacts[3].flat.reliquaryMainstat.mainPropId] }):** +${artifacts[3].flat.reliquaryMainstat.statValue}
+                **${emoji_map[artifacts[3].flat.reliquarySubstats[0].appendPropId]}Sub Stat (${ names_map[artifacts[3].flat.reliquarySubstats[0].appendPropId] }):** +${artifacts[3].flat.reliquarySubstats[0].statValue}
+                **${emoji_map[artifacts[3].flat.reliquarySubstats[1].appendPropId]}Sub Stat (${ names_map[artifacts[3].flat.reliquarySubstats[1].appendPropId] }):** +${artifacts[3].flat.reliquarySubstats[1].statValue}
+                **${emoji_map[artifacts[3].flat.reliquarySubstats[2].appendPropId]}Sub Stat (${ names_map[artifacts[3].flat.reliquarySubstats[2].appendPropId] }):** +${artifacts[3].flat.reliquarySubstats[2].statValue}
+                **${emoji_map[artifacts[3].flat.reliquarySubstats[3].appendPropId]}Sub Stat (${ names_map[artifacts[3].flat.reliquarySubstats[3].appendPropId] }):** +${artifacts[3].flat.reliquarySubstats[3].statValue}`},
+
+                { name: `${ relic_map[artifacts[4].flat.nameTextMapHash] } (Lv. ${artifacts[4].reliquary.level - 1})\n${ ":star:".repeat(artifacts[4].flat.rankLevel) }`, value: 
+                `**${emoji_map[artifacts[4].flat.reliquaryMainstat.mainPropId]}Main Stat (${ names_map[artifacts[4].flat.reliquaryMainstat.mainPropId] }):** +${artifacts[4].flat.reliquaryMainstat.statValue}
+                **${emoji_map[artifacts[4].flat.reliquarySubstats[0].appendPropId]}Sub Stat (${ names_map[artifacts[4].flat.reliquarySubstats[0].appendPropId] }):** +${artifacts[4].flat.reliquarySubstats[0].statValue}
+                **${emoji_map[artifacts[4].flat.reliquarySubstats[1].appendPropId]}Sub Stat (${ names_map[artifacts[4].flat.reliquarySubstats[1].appendPropId] }):** +${artifacts[4].flat.reliquarySubstats[1].statValue}
+                **${emoji_map[artifacts[4].flat.reliquarySubstats[2].appendPropId]}Sub Stat (${ names_map[artifacts[4].flat.reliquarySubstats[2].appendPropId] }):** +${artifacts[4].flat.reliquarySubstats[2].statValue}
+                **${emoji_map[artifacts[4].flat.reliquarySubstats[3].appendPropId]}Sub Stat (${ names_map[artifacts[4].flat.reliquarySubstats[3].appendPropId] }):** +${artifacts[4].flat.reliquarySubstats[3].statValue}`}
+
+
             ])
-        console.log(artifacts[0])
+        console.log(artifacts[0].flat.reliquarySubstats)
         return artifactsEmbed
     } catch (e){
         console.log(e)
