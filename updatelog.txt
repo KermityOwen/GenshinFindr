@@ -15,3 +15,6 @@ V1.2-beta:
 - Fixed all bugs regarding callbacks
 
 V2.0-beta:
+- Fixed bug where server crashes if user tries to change characters from an embed sent too long ago
+- Fixed all bugs regarding callbacks
+

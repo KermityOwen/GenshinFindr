@@ -18,6 +18,7 @@ client.once("ready", () => {
 })
 
 client.on("interactionCreate", async interaction => {
+
     if (!(interaction.type === Discord.InteractionType.ApplicationCommand) &&
     !interaction.isSelectMenu()) return;
 
@@ -29,45 +30,76 @@ client.on("interactionCreate", async interaction => {
     }
 
     if (commandName === "find"){ 
-        findr_fetcher.fetch_data(interaction.options.getString("uid")).then(r => {
-            create_player_embed(r).then(r2 => {
-                //console.log(r2)
+        findr_fetcher.fetch_data(interaction.options.getString("uid"), async function(err, r){
+            if(err){
+                interaction.reply({
+                    embeds: [{Title: "This UID is invalid. Please try again."}]
+                })
+            } else {
+                create_player_embed(r).then(r2 => {
                 interaction.reply({
                     embeds: [r2],
-                    //files: ["../resources/character_icons/Character_Tartaglia.png"]
                 })
-            })
+                })
+            }
         })
     }
 
     if (commandName === "char"){ 
-        findr_fetcher.fetch_data(interaction.options.getString("uid")).then(async r => {
-            const embed = await create_character_embed(r, 0);
-            const select = await create_select_character(r.avatarInfoList, interaction.options.getString("uid"))
-            /*for (let i = 0; i<r.avatarInfoList.length; i++){
-                embed.push(await create_character_embed(r, i))
-            }*/
-            //console.log(select.components[0].options[0].data.label)
-            interaction.reply({
-                embeds: [embed],
-                components: [select],
-            })
+        findr_fetcher.fetch_data(interaction.options.getString("uid"), async function(err, r){
+            let error_thrown = false;
+            if (err){
+                interaction.reply({
+                    embeds: [{Title: "This UID is invalid. Please try again."}]
+                })
+            } else {
+                const embed = await create_character_embed(r, 0, async function(err, r){
+                    if (err){
+                        interaction.reply({
+                            embeds: [{Title: "There are no characters on display for this user"}]
+                        })
+                        error_thrown = true;
+                    } else {
+                        return r
+                    }
+                });
+                const select = await create_select_character(r.avatarInfoList, interaction.options.getString("uid"), async function(err, r){
+                    if (err){
+                        console.log("Error creating select menu")
+                    } else {
+                        return r
+                    }
+                });
+                console.log(embed)
+                if (!error_thrown){
+                    interaction.reply({
+                        embeds: [embed],
+                        components: [select],
+                    })
+                }
+            }
         })
     }
 
     if (interaction.customId === 'char_sel'){
         c_uid_arr = (interaction.values[0]).split('-');
-        findr_fetcher.fetch_data(c_uid_arr[1]).then(async r => {
-            const embed = await create_character_embed(r, c_uid_arr[0]);
-            //const select = await create_select_character(r.avatarInfoList, c_uid_arr[1])
-            /*for (let i = 0; i<r.avatarInfoList.length; i++){
-                embed.push(await create_character_embed(r, i))
-            }*/
-            //console.log(select.components[0].options[0].data.label)
-            interaction.update({
-                embeds: [embed],
-                //components: [select],
-            })
+        findr_fetcher.fetch_data(c_uid_arr[1], async function (err, r){
+            if (err){
+                interaction.reply({
+                    embeds: [{Title: "Error text"}]
+                })
+            } else {
+                const embed = await create_character_embed(r, c_uid_arr[0], function (err, r){
+                    if (err){
+                        console.log(err)
+                    } else {
+                        return r
+                    }
+                });
+                interaction.update({
+                    embeds: [embed],
+                })
+            }
         })
     }
 
@@ -88,5 +120,5 @@ client.on("interactionCreate", async interaction => {
 
 //700378769
 
-console.log(TOKEN)
+//console.log(TOKEN)
 client.login(TOKEN)
